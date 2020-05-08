@@ -1,0 +1,162 @@
+.main-nav {
+  // width: 78.8rem;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-nav__item {
+  position: relative;
+  // margin-top: 0.5rem;
+  &:not(:last-child) {
+    margin-right: 2.7rem;
+  }
+}
+
+.main-nav__item:hover .main-nav__sublist,
+.main-nav__link:focus + .main-nav__sublist {
+  visibility: visible;
+  opacity: 1;
+}
+
+.main-nav__link {
+  display: block;
+  position: relative;
+
+  padding-top: 1rem;
+  // padding-bottom: 2rem;
+
+  color: inherit;
+  .text-stroke;
+  cursor: pointer;
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   z-index: 6;
+  //   bottom: 0.6rem;
+  //   left: 0;
+
+  //   width: 0;
+  //   height: 0.2rem;
+
+  //   background-color: #3F5FD3;
+
+  //   transition-duration: 0.3s;
+  // }
+
+  // &:hover::before,
+  // &:focus::before {
+  //   width: 92%;
+  // }
+}
+
+.main-nav__sublist {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 5;
+  top: 3rem;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition-duration: 0.3s;
+
+
+  width: 30.1rem;
+  padding: 2.6rem;
+
+  background-color: #F5F5F5;
+}
+
+.main-nav__subitem {
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.main-nav__sublink {
+  display: block;
+}
+
+@media (max-width: @mobile-width) {
+  .main-nav {
+    width: 100%;
+    margin-left: 0;
+
+    font-size: @m30px;
+    text-transform: uppercase;
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+  }
+
+  .main-nav__item {
+    position: relative;
+    margin-top: 0;
+    &:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: @m30px;
+    }
+  }
+
+  .main-nav__link {
+    display: block;
+    padding-bottom: 0;
+    &::before {
+      content: none;
+    }
+  }
+
+  .main-nav__sublist {
+    display: none;
+
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+
+    width: @a;
+    padding: 0;
+    // padding-top: @m13px;
+    padding-left: @m38px;
+
+    font-weight: 300;
+    text-transform: none;
+    background-color: transparent;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  .main-nav__subitem {
+    &:not(:last-child) {
+      margin-bottom: @m37px;
+    }
+    &:last-child {
+      margin-bottom: @m25px;
+    }
+  }
+
+  .active {
+    .main-nav * {
+      color: #fff;
+    }
+    .main-nav {
+      margin-bottom: @m230px;
+    }
+    .main-nav__sublist {
+      background-color: transparent;
+    }
+  }
+
+  .no-js {
+    .main-nav__sublist {
+      background-color: transparent;
+    }
+  }
+}
