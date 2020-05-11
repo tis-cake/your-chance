@@ -83,6 +83,20 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-display: swap;
+  font-family: 'DancingScript';
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url('../fonts/Dancing-Script/regular/DancingScript-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'DancingScript';
+  src: local('Dancing Script Bold'), local('DancingScript-Bold'), url('../fonts/Dancing-Script/bold/DancingScript-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 html {
   font-size: 62.5%;
 }
@@ -758,14 +772,14 @@ input[type="radio"].visually-hidden {
   font-style: normal;
 }
 .video-review {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
   background-color: #F8F8F8;
 }
 .video-review__column-wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 63px;
+  margin-bottom: 6.3rem;
 }
 .video-review__column {
   width: 234px;
@@ -778,33 +792,74 @@ input[type="radio"].visually-hidden {
   font-family: 'Cinematografica', 'Arial', sans-serif;
 }
 .video-review__title {
-  margin-top: 93px;
-  margin-bottom: 60px;
-  font-size: 80px;
-  line-height: 59px;
+  margin-top: 9.3rem;
+  margin-bottom: 6rem;
+  font-size: 8rem;
+  line-height: 5.9rem;
 }
 .video-review__sub-title {
-  font-size: 40px;
-  line-height: 29px;
+  font-size: 4rem;
+  line-height: 2.9rem;
 }
 .video-review__video-wrap {
-  width: 564px;
-  height: 398px;
+  width: 56.4rem;
+  height: 39.8rem;
 }
 .video-review__text-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 757px;
+  width: 75.7rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 .video-review__desc {
-  line-height: 33px;
+  line-height: 3.3rem;
 }
 .video-review__link {
-  margin-top: 23px;
+  margin-top: 2.3rem;
+}
+.features {
+  padding-top: 13.5rem;
+  padding-bottom: 13.5rem;
+}
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features__item:first-child {
+  margin-right: 15.7rem;
+}
+.features__item-def {
+  margin-top: 7.5rem;
+}
+.features__sub-title {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #67ED81;
+}
+.feateres__title {
+  max-width: 63.5rem;
+  font-family: 'Cinematografica', 'Arial', sans-serif;
+  font-size: 8rem;
+  line-height: 5.9rem;
+  color: #67ED81;
+}
+.feateres__link {
+  display: inline-block;
+  margin-top: 2.9rem;
+}
+.features__def-term {
+  margin-bottom: 2.1rem;
+  font-family: 'DancingScript', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.features__def-desc {
+  margin-left: 8.7rem;
+  font-size: 2rem;
+  line-height: 3.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
