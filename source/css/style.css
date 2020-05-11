@@ -712,9 +712,12 @@ input[type="radio"].visually-hidden {
 .banner-dark__content-wrap {
   text-align: center;
 }
+.banner-dark__title,
+.banner-dark__sub-title {
+  font-family: 'Cinematografica', 'Arial', sans-serif;
+}
 .banner-dark__title {
   position: relative;
-  font-family: 'Cinematografica', 'Arial', sans-serif;
   text-transform: uppercase;
   text-shadow: #232323 0.25rem 0.25rem 0, #232323 -0.25rem -0.25rem 0, #232323 -0.25rem 0.25rem 0, #232323 0.25rem -0.25rem 0;
   margin-bottom: 1rem;
@@ -739,18 +742,69 @@ input[type="radio"].visually-hidden {
 }
 .banner-dark__sub-title {
   margin-bottom: 1.7rem;
-  font-family: 'Cinematografica', 'Arial', sans-serif;
   font-size: 5rem;
 }
 .banner-dark__desc {
   margin-bottom: 2.2rem;
   font-size: 2rem;
 }
+.banner-dark__link {
+  display: inline-block;
+}
 .banner-dark__emphasis {
   margin-left: 1rem;
   margin-right: 1rem;
   font-family: 'Circe', 'Arial', sans-serif;
   font-style: normal;
+}
+.video-review {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #F8F8F8;
+}
+.video-review__column-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 63px;
+}
+.video-review__column {
+  width: 234px;
+}
+.video-review__column--right {
+  text-align: right;
+}
+.video-review__title,
+.video-review__sub-title {
+  font-family: 'Cinematografica', 'Arial', sans-serif;
+}
+.video-review__title {
+  margin-top: 93px;
+  margin-bottom: 60px;
+  font-size: 80px;
+  line-height: 59px;
+}
+.video-review__sub-title {
+  font-size: 40px;
+  line-height: 29px;
+}
+.video-review__video-wrap {
+  width: 564px;
+  height: 398px;
+}
+.video-review__text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 757px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.video-review__desc {
+  line-height: 33px;
+}
+.video-review__link {
+  margin-top: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */
