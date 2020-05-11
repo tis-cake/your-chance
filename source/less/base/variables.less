@@ -1,7 +1,12 @@
-@dangrek: 'Dangrek', 'Arial', sans-serif;
-// @charter: 'Charter', 'Times New Roman', serif;
+// @dangrek: 'Dangrek', 'Arial', sans-serif;
+@circe: 'Circe', 'Arial', sans-serif;
+@droid: 'Droid', 'Arial', sans-serif;
 @dina: 'DINAlternate', 'Arial', sans-serif;
-@droid: 'Droid', sans-serif;
+@cinema: 'Cinematografica', 'Arial', sans-serif;;
+
+@dark-brown: #2C2C2C;
+@green: #67ED81;
+@red: #F65471;
 
 @mobile-width: 420px;
 @tablet-width: 755px;
@@ -16,7 +21,6 @@
 @solid: 1px solid red;
 
 @text: 0px 4px 4px rgba(0, 0, 0, 0.25);
-@dark-brown: #2C2C2C;
 
 .o {
   outline: 1px solid red;
@@ -45,11 +49,11 @@
                #000 1px -1px 0;
 }
 
-.text-stroke(@color) {
-  text-shadow: @color 1px 1px 0,
-               @color -1px -1px 0,
-               @color -1px 1px 0,
-               @color 1px -1px 0;
+.text-stroke(@color, @offset) {
+  text-shadow: @color @offset @offset 0,
+               @color -@offset -@offset 0,
+               @color -@offset @offset 0,
+               @color @offset -@offset 0;
 }
 
 .reset-list {

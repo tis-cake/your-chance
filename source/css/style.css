@@ -50,16 +50,16 @@
 }
 @font-face {
   font-display: swap;
-  font-family: 'Droid';
-  src: local("Droid"), local("Droid Regular"), local("Droid-Regular"), url("../fonts/Droid/regular/Droid-Regular.woff2") format("woff2"), url("../fonts/Droid/regular/Droid-Regular.woff") format("woff"), url("../fonts/Droid/regular/Droid-Regular.ttf") format("truetype");
+  font-family: 'Circe';
+  src: local("Circe"), local("Circe Regular"), local("Circe-Regular"), url("../fonts/Circe/regular/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe/regular/Circe-Regular.woff") format("woff"), url("../fonts/Circe/regular/Circe-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Dangrek';
-  src: url('Dangrek.eot');
-  src: local('Dangrek'), /*url('Dangrek.eot?#iefix') format('embedded-opentype'),*/ url('../fonts/Dangrek/regular/Dangrek.woff2') format('woff2'), url('../fonts/Dangrek/regular/Dangrek.woff') format('woff'), url('../fonts/Dangrek/regular/Dangrek.ttf') format('truetype');
-  font-weight: normal;
+  src: local('Dangrek'), local("Dangrek Regular"), local("Dangrek-Regular"), url('../fonts/Dangrek/regular/Dangrek.woff2') format('woff2'), url('../fonts/Dangrek/regular/Dangrek.woff') format('woff'), url('../fonts/Dangrek/regular/Dangrek.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -69,15 +69,29 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-display: swap;
+  font-family: 'Cinematografica';
+  src: local("Cinematografica Light"), local("Cinematografica-Light"), url('../fonts/Cinematografica/light/Cinematografica-Light.woff2') format('woff2'), url('../fonts/Cinematografica/light/Cinematografica-Light.woff') format('woff'), url('../fonts/Cinematografica/light/Cinematografica-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Cinematografica';
+  src: local('Cinematografica'), local("Cinematografica Regular"), local("Cinematografica-Regular"), url('../fonts/Cinematografica/regular/Cinematografica.woff2') format('woff2'), url('../fonts/Cinematografica/regular/Cinematografica.woff') format('woff'), url('../fonts/Cinematografica/regular/Cinematografica.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 html {
   font-size: 62.5%;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Dangrek', 'Arial', sans-serif;
+  font-family: 'Circe', 'Arial', sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #000;
 }
 img {
@@ -150,8 +164,8 @@ input[type="radio"].visually-hidden {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.container-outside {
-  width: 151rem;
+.container-inside {
+  width: 119.6rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
@@ -165,6 +179,19 @@ input[type="radio"].visually-hidden {
 }
 .phone-mask:-moz-ui-invalid {
   box-shadow: none;
+}
+.link {
+  font-family: 'Cinematografica', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.link--green {
+  color: #67ED81;
+}
+.link--red {
+  color: #F65471;
 }
 @media (max-width: 755px) {
   .container,
@@ -371,6 +398,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-size: 1.6rem;
 }
 .main-nav__item {
   position: relative;
@@ -527,6 +555,202 @@ input[type="radio"].visually-hidden {
   .menu-toggle {
     margin-bottom: 0;
   }
+}
+.main-info {
+  position: relative;
+}
+.main-info__bg-wrap {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 54rem;
+}
+.main-info__bg-wrap--overlay::before {
+  position: absolute;
+  content: '';
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.main-info__bg-img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-info__content-wrap {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 54rem;
+  padding-top: 2rem;
+  color: #fff;
+}
+.main-info__sub-title {
+  font-size: 2.4rem;
+}
+.main-info__title {
+  margin-bottom: 2rem;
+  font-family: 'Cinematografica', 'Arial', sans-serif;
+  font-size: 6rem;
+}
+.main-info__desc {
+  margin-bottom: 2rem;
+}
+.services {
+  padding-top: 17rem;
+  padding-bottom: 17rem;
+}
+.services__column-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.services__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services__column--vertical {
+  width: 26.5rem;
+}
+.services__column--vertical .services__img-wrap {
+  height: 39.4rem;
+}
+.services__column--horizontal {
+  width: 44.6rem;
+}
+.services__column--horizontal .services__img-wrap {
+  height: 31.9rem;
+}
+.services__title {
+  margin-bottom: 2.5rem;
+  font-family: 'Cinematografica', 'Arial', sans-serif;
+  font-size: 8rem;
+  line-height: 5.9rem;
+  text-align: center;
+}
+.services__title--mt15 {
+  margin-top: 1.6rem;
+}
+.services__title--mb40 {
+  margin-bottom: 41px;
+}
+.services__title-item {
+  display: block;
+}
+.services__img-wrap {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+.services__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services__desc {
+  min-height: 5rem;
+  margin-bottom: 3.3rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+.services__desc-item {
+  display: block;
+}
+.banner-green {
+  color: #2C2C2C;
+  background-color: #67ED81;
+}
+.banner-green__content-wrap {
+  padding-top: 8.5rem;
+  padding-bottom: 8.5rem;
+  text-align: center;
+}
+.banner-green__sub-title {
+  margin-bottom: 1.3rem;
+  font-size: 2.4rem;
+}
+.banner-green__title,
+.banner-green__main-title {
+  font-family: 'Cinematografica', 'Arial', sans-serif;
+  text-transform: uppercase;
+}
+.banner-green__title {
+  margin-bottom: 1.5rem;
+  font-size: 8.5rem;
+}
+.banner-green__desc {
+  line-height: 2.5rem;
+  text-align: center;
+}
+.banner-green__desc-item {
+  display: block;
+}
+.banner-green__main-title {
+  margin-top: 2.2rem;
+  font-size: 30rem;
+}
+.banner-green__main-title--fz350 {
+  font-size: 35rem;
+  line-height: 35rem;
+}
+.banner-dark {
+  padding-bottom: 47px;
+  color: #67ED81;
+  background-color: #2C2C2C;
+}
+.banner-dark__content-wrap {
+  text-align: center;
+}
+.banner-dark__title {
+  position: relative;
+  font-family: 'Cinematografica', 'Arial', sans-serif;
+  text-transform: uppercase;
+  text-shadow: #232323 0.25rem 0.25rem 0, #232323 -0.25rem -0.25rem 0, #232323 -0.25rem 0.25rem 0, #232323 0.25rem -0.25rem 0;
+  margin-bottom: 1rem;
+  padding-top: 20rem;
+  font-weight: 300;
+  font-size: 32rem;
+  line-height: 32rem;
+  letter-spacing: 0.6rem;
+}
+.banner-dark__title-item {
+  margin-left: 4rem;
+}
+.banner-dark__title-img {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 2.7rem;
+  left: 29.6%;
+  width: 35.3rem;
+  height: 48rem;
+  background-image: url('../img/dark/dark1.png');
+}
+.banner-dark__sub-title {
+  margin-bottom: 1.7rem;
+  font-family: 'Cinematografica', 'Arial', sans-serif;
+  font-size: 5rem;
+}
+.banner-dark__desc {
+  margin-bottom: 2.2rem;
+  font-size: 2rem;
+}
+.banner-dark__emphasis {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: 'Circe', 'Arial', sans-serif;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

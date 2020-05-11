@@ -1,0 +1,71 @@
+.banner-dark {
+  padding-bottom: 47px;
+
+  color: @green;
+  background-color: @dark-brown;
+}
+
+.banner-dark__content-wrap {
+  text-align: center;
+}
+
+.banner-dark__title {
+  position: relative;
+
+  font-family: @cinema;
+  text-transform: uppercase;
+  .text-stroke(#232323, 0.25rem);
+
+  // первый баннер
+  margin-bottom: 1rem;
+  padding-top: 20rem;
+  font-weight: 300;
+  font-size: 32rem;
+  line-height: 32rem;
+  letter-spacing: 0.6rem;
+  //
+
+  &-item {
+    margin-left: 4rem;
+  }
+
+  &-img {
+    z-index: 1;
+    content: '';
+    position: absolute;
+
+    // первый баннер
+    // top: -172px;
+    top: 2.7rem;
+    left: 29.6%;
+    // transform: translateX(-50%);
+    width: 35.3rem;
+    height: 48rem;
+    background-image: url('../img/dark/dark1.png');
+    //
+
+  }
+}
+
+.banner-dark__sub-title {
+  margin-bottom: 1.7rem;
+
+  font-family: @cinema;
+  font-size: 5rem;
+}
+
+.banner-dark__desc {
+  margin-bottom: 2.2rem;
+  font-size: 2rem;
+}
+
+.banner-dark__link {
+}
+
+.banner-dark__emphasis {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  font-family: @circe;
+  font-style: normal;
+}
