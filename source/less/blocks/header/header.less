@@ -3,7 +3,7 @@
 
   width: 100%;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  // padding-bottom: 2rem;
 
   color: #fff;
   background-color: @dark-brown;
@@ -19,6 +19,10 @@
   // border-bottom: 1px solid #C4C4C4;
 }
 
+.header__logo {
+  margin-bottom: 2rem;
+}
+
 .header__main-nav {
   // max-width: 95rem;
   width: 95rem;
@@ -31,7 +35,8 @@
 
 .header__phone-link {
   display: inline-block;
-  padding-top: 0.5rem;
+  // padding-top: 0.5rem;
+  margin-bottom: 1.5rem;
 
   font-size: 2.4rem;
   font-weight: 500;
@@ -50,102 +55,52 @@
   display: none;
 }
 
-@media (max-width: @mobile-width) {
+@media (max-width: @tablet-width) {
+
   .header {
-    height: @a;
-    margin-top: 0;
-    padding-top: @m54px;
-    .container {
-      width: @a;
-    }
-    .logo__description {
-      display: none;
-    }
-  }
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 
-  .active.header {
-    height: 100vh;      // убрать если js подключен
-    overflow-y: scroll; // убрать если js подключен
-    overflow-x: hidden; // убрать если js подключен
-  }
-
-  .no-js.header {
-    // position: relative;
-    height: 200vw; // 1500px;
-    overflow: visible;
-  }
-
-  .no-js.header,
-  .active.header {
-    // height: 100vh;      // убрать если js подключен
-    // overflow-y: scroll; // убрать если js подключен
-    // overflow-x: hidden; // убрать если js подключен
-
-    position: relative;
-    z-index: 10;
-    background-color: #303030;
-
-    .header__wrapper {
-      justify-content: flex-start;
-      flex-wrap: wrap;
-    }
-
-    .header__link-call-back,
-    .header__main-nav {
-      display: block;
-    }
-
-    .header__phone-wrapper {
-      display: none;
+    &.active {
+      height: 100vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      position: relative;
+      z-index: 10;
+      .header__wrapper {
+        flex-wrap: wrap;
+      }
+      .header__main-nav {
+        display: block;
+      }
     }
   }
 
-  .active.header * {
-    color: #fff;
-  }
-
-  .header.bg .header__wrapper,
   .header__wrapper {
-    margin-bottom: @m52px;
-    border-bottom: none;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+
   }
 
-  .header__menu-toggle {
-    display: block;
+  // .header__main-nav {
+  //   width: 95rem;
+  // }
+
+  .header__logo {
+    margin-bottom: 0;
   }
 
-  .header__link-call-back,
-  .header__main-nav {
+  .header__phone-wrapper {
     display: none;
   }
 
-  .header__logo {
-    margin-left: @m33px;
-    margin-right: auto;
+  .header__menu-toggle,
+  .header__link-call-back {
+    display: block;
   }
 
   .header__main-nav {
-    margin-top: @m52px;
-    padding-left: @m5px;
-  }
-
-  .header__phone {
-    margin-bottom: @m8px;
-    font-size: @m24px;
-  }
-
-  .header__phone-text {
-    font-size: @m18px;
-  }
-
-  .header__link-call-back {
-    width: @m64px;
-    height: @m62px;
-  }
-
-  .header__link-call-back-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    margin-top: 3.1rem;
   }
 }
