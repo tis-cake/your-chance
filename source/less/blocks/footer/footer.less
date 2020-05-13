@@ -24,7 +24,9 @@
 
 .footer__list-tile {
   margin-bottom: 4.1rem;
+
   font-size: 1.6rem;
+  text-transform: uppercase;
   color: #777777;
 }
 
@@ -65,4 +67,75 @@
 
 .footer__phone-link {
   font-size: 2.2rem;
+}
+
+@media (max-width: @tablet-width) {
+  .footer {
+    padding-top: 5.8rem;
+    padding-bottom: 5.8rem;
+  }
+
+  .footer__columns-wrap {
+    flex-wrap: wrap;
+  }
+
+  .footer__list {
+    width: 44%;
+    margin-bottom: 4.1rem;
+
+    // font-size: 1.4rem;
+    // line-height: 2rem;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .footer__item {
+    margin-bottom: 1.9rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__list-tile {
+    margin-bottom: 4.1rem;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+
+  .footer__bottom-link-wrap {
+    flex-direction: column;
+
+    margin-top: 1.3rem;
+    padding-top: 0;
+
+    border-top: none;
+  }
+
+  .footer__logo {
+    flex-direction: column;
+    .logo__img-wrap {
+      width: 8.8rem;
+      height: 8.8rem;
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+    .logo__title {
+      font-size: 4rem;
+    }
+  }
+
+  .footer__phone-wrapper {
+    margin-top: 1.6rem;
+    text-align: center;
+  }
+
+  .footer__phone-locate {
+    margin-bottom: 0.3rem;
+  }
+
+  .footer__phone-link {
+    // font-size: 2.2rem;
+    font-size: 22px;
+  }
 }

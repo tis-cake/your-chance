@@ -140,7 +140,8 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: @tablet-width) {
   .container,
-  .container-outside {
+  .container-outside,
+  .container-inside {
     width: @a;
     .padding-inline(2.5rem);
   }
@@ -152,5 +153,15 @@ input[type="radio"].visually-hidden {
 
   .mobile-block {
     display: block;
+  }
+
+  .link {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 330px) {
+  .link {
+    font-size: 26px;
   }
 }

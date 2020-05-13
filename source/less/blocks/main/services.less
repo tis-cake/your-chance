@@ -45,7 +45,7 @@
   }
 
   &--mb40 {
-    margin-bottom: 41px;
+    margin-bottom: 4.1rem;
   }
 
   &-item {
@@ -55,7 +55,6 @@
 
 .services__img-wrap {
   width: 100%;
-  // margin-bottom: 35px;
   margin-bottom: 2.5rem;
 }
 
@@ -75,4 +74,124 @@
 }
 
 .services__link {
+}
+
+@media (max-width: @tablet-width) {
+  .services {
+    // padding-top: 5.5rem;
+    // padding-bottom: 5.5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .services__columns-wrap {
+    flex-direction: column;
+  }
+
+  .services__column {
+    align-items: flex-start;
+    margin-bottom: 9.4rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .services__column--vertical {
+    width: 100%;
+
+    display: grid;
+    grid-column-gap: 2.0rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    .services__img-wrap {
+      grid-column: ~'1 / 2';
+      grid-row: ~'1 / 4';
+
+      height: 100%;
+      margin-bottom: 0;
+    }
+    .services__title {
+      grid-column: ~'2 / 3';
+      grid-row: ~'1 / 2';
+
+      margin-bottom: 1.9rem;
+    }
+    .services__desc {
+      grid-column: ~'2 / 3';
+      grid-row: ~'2 / 3';
+    }
+    .services__link {
+      margin-top: auto;
+      line-height: 3.2rem;
+    }
+  }
+
+  .services__column--horizontal {
+    width: @a;
+  }
+
+  .services__title {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 2.2rem;
+    // &--mt15,
+    // &--mb40 {
+    //   margin: 0;
+    //   margin-bottom: 2.2rem;
+    // }
+    &-item {
+      display: inline-block;
+    }
+  }
+
+  .services__img-wrap {
+    flex-shrink: 0;
+    order: -1;
+  }
+
+  .services__desc {
+    min-height: none;
+    margin-bottom: 3.3rem;
+
+    text-align: left;
+  }
+
+  .services__link {
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .services__column--vertical {
+    max-height: 26rem;
+    grid-template-columns: 18.4rem 16.8rem;
+    grid-column-gap: 0;
+
+    justify-content: space-between;
+  }
+
+  .services__column--horizontal {
+    .services__img-wrap {
+      height: 26.2rem;
+    }
+  }
+
+  .services__title {
+    font-size: 5rem;
+    line-height: 3.7rem;
+  }
+
+  .services__desc {
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+}
+
+@media (max-width: 330px) {
+  .services__desc {
+    font-size: 13px;
+    line-height: 24px;
+  }
 }

@@ -1,5 +1,5 @@
 .banner-dark {
-  padding-bottom: 47px;
+  padding-bottom: 4.7rem;
 
   color: @green;
   background-color: @dark-brown;
@@ -17,16 +17,16 @@
 .banner-dark__title {
   position: relative;
 
+  font-weight: 300;
+  letter-spacing: 0.6rem;
   text-transform: uppercase;
   .text-stroke(#232323, 0.25rem);
 
   // первый баннер
-  margin-bottom: 1rem;
-  padding-top: 20rem;
-  font-weight: 300;
-  font-size: 32rem;
-  line-height: 32rem;
-  letter-spacing: 0.6rem;
+  // margin-bottom: 1rem;
+  // padding-top: 20rem;
+  // font-size: 32rem;
+  // line-height: 32rem;
   //
 
   &-item {
@@ -38,20 +38,9 @@
     content: '';
     position: absolute;
 
-    // первый баннер
-    // top: -172px;
-    top: 2.7rem;
-    left: 29.6%;
-    // transform: translateX(-50%);
-    width: 35.3rem;
-    height: 48rem;
-
-    background-image: url('../img/dark/dark1.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    //
-
   }
 }
 
@@ -76,4 +65,78 @@
 
   font-family: @circe;
   font-style: normal;
+}
+
+.banner-dark-win {
+  .banner-dark__title {
+    margin-bottom: 1rem;
+    padding-top: 20rem;
+    font-size: 32rem;
+    line-height: 32rem;
+    &-img {
+      top: 2.7rem;
+      left: 29.6%;
+      width: 35.3rem;
+      height: 48rem;
+      background-image: url('../img/dark/dark1.png');
+    }
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .banner-dark {
+    padding-bottom: 6.5rem;
+  }
+
+  .banner-dark__content-wrap {
+  }
+
+
+  .banner-dark__title {
+    &-item {
+      margin-left: 0
+    }
+    &-img {
+    }
+  }
+
+  .banner-dark__sub-title {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    &-item {
+      display: block;
+    }
+  }
+
+  .banner-dark__desc {
+    margin-bottom: 2.2rem;
+    font-size: 2rem;
+    &-item {
+      display: block;
+    }
+  }
+
+  .banner-dark__link {
+    // display: inline-block;
+  }
+
+  .banner-dark__emphasis {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .banner-dark-win {
+    .banner-dark__title {
+      padding-top: 13rem;
+      margin-bottom: 2.8rem;
+      font-size: 14.0rem;
+      line-height: 14rem;
+      &-img {
+        top: 1.9rem;
+        left: 36.7%;
+        width: 18.6rem;
+        height: 25.3rem;
+      }
+    }
+  }
 }

@@ -4,11 +4,6 @@
 }
 
 .banner-green__content-wrap {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-
   padding-top: 8.5rem;
   padding-bottom: 8.5rem;
 
@@ -45,6 +40,44 @@
   &--fz350 {
     font-size: 35rem;
     line-height: 35rem;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .banner-green__content-wrap {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
+
+  .banner-green__sub-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .banner-green__title {
+    font-size: 6rem;
+  }
+
+  .banner-green__desc {
+    // line-height: 2.5rem;
+    &--break {
+      max-width: 32rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-item {
+      // display: block;
+    }
+  }
+
+  .banner-green__main-title {
+    margin-top: 4.3rem;
+    margin-bottom: 4.3rem;
+    // font-size: 30rem;
+    &--fz350 {
+      font-size: 20rem;
+      line-height: 17rem;
+    }
   }
 }
 

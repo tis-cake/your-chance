@@ -55,3 +55,61 @@
   font-size: 2rem;
   line-height: 3.3rem;
 }
+
+@media (max-width: @tablet-width) {
+
+  .features {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .features__list {
+  }
+
+  .features__item {
+    &:first-child {
+      margin-right: 0;
+    }
+    &-def {
+      margin-top: 7.1rem;
+    }
+    &--last-mobile {
+      order: 1;
+    }
+  }
+
+  .features__sub-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .feateres__title {
+    max-width: none;
+    font-size: 7rem;
+    line-height: 5.1rem;
+  }
+
+  .feateres__link {
+    display: inline-block;
+    margin-top: 2.9rem;
+  }
+
+  .features__def-list {
+    margin-bottom: 5rem;
+  }
+
+  .features__def-term {
+    margin-bottom: 1.8rem;
+    // font-size: 2rem;
+    font-size: 20px;
+  }
+
+  .features__def-desc {
+    margin-left: 2.3rem;
+
+    // font-size: 1.4rem;
+    // line-height: 2.6rem;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
