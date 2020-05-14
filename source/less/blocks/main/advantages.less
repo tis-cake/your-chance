@@ -1,0 +1,155 @@
+.advantages {
+  padding-top: 17rem;
+  padding-bottom: 17rem;
+}
+
+.advantages__columns-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__img-column {
+  display: grid;
+
+  grid-template-areas:
+    "f f s s"
+    "f f s s"
+    "t t s s"
+    "t t h h"
+    "t t h h";
+
+  grid-column-gap: 3.5rem;
+  grid-row-gap: 3rem;
+
+  width: 67.5rem;
+  height: 72.5rem;
+}
+
+.advantages__img {
+  .img-cover;
+
+  &:nth-child(1) {
+    grid-area: f;
+
+  }
+  &:nth-child(2) {
+    grid-area: s;
+  }
+  &:nth-child(3) {
+    grid-area: t;
+  }
+  &:nth-child(4) {
+    grid-area: h;
+  }
+}
+
+.advantages__content-wrap {
+  width: 63.5rem;
+}
+
+.advantages__title {
+  margin-bottom: 5rem;
+
+  font-family: @cinema;
+  font-size: 9rem;
+  line-height: 6.6rem;
+
+  letter-spacing: 0.02em;
+}
+
+.advantages__list-title {
+  margin-bottom: 1.6rem;
+
+  font-size: 2.5rem;
+  line-height: 4.6rem;
+  text-transform: uppercase;
+  .text-stroke(#000, 0.05rem);
+}
+
+.advantages__list {
+  box-sizing: border-box;
+}
+
+.advantages__item {
+  position: relative;
+
+  display: flex;
+
+  margin-bottom: 1.75rem;
+  padding-left: 4.6rem;
+  padding-bottom: 1.7rem;
+
+  border-bottom: 0.1rem solid #E2E2E2;
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    top: -0.6rem;
+    left: 0;
+
+    width: 3.2rem;
+    height: 3.2rem;
+
+    background-image: url('../img/svg/check.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.advantages__more-info {
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.advantages__more-info:hover+.advantages__more-block,
+.advantages__more-info:focus+.advantages__more-block {
+  display: block;
+}
+
+.advantages__more-block {
+  box-sizing: border-box;
+  display: none;
+
+  position: absolute;
+  z-index: 10;
+  top: 4.4rem;
+  right: -0.3rem;
+
+  width: 36.2rem;
+
+  padding-top: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2.4rem;
+
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  background-color: #F2FFF5;
+  border: 0.2rem solid #67ED81;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: -1.4rem;
+    right: 3rem;
+
+    width: 0;
+    height: 0;
+    border: 1.2rem solid #ffffff;
+    border-right-color: transparent;
+    border-left-color: transparent;
+
+    border-top-width: 0;
+    border-bottom-color: #67ED81;
+  }
+}
+
+.advantages__more-title {
+  display: block;
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
+}
