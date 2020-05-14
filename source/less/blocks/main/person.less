@@ -1,0 +1,49 @@
+.person {
+  margin-bottom: 15rem;
+}
+
+.person__content-wrap {
+  text-align: center;
+}
+
+.person__img-wrap {
+  width: 20.5rem;
+  height: 20.5rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.3rem;
+
+  background-color: #282826;
+  border-radius: 50%;
+}
+
+.person__img {
+  .img-cover;
+}
+
+.person__title {
+  position: relative;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 5.6rem;
+    height: 0.4rem;
+
+    background-color: @green;
+  }
+}
+
+.person__desc {
+  // margin-bottom: 40px;
+}
+
+.person__swiper {
+  margin-top: 5.2rem;
+}
