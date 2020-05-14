@@ -1,5 +1,4 @@
 .person {
-  margin-bottom: 15rem;
 }
 
 .person__content-wrap {
@@ -24,8 +23,10 @@
 
 .person__title {
   position: relative;
+  display: block;
   margin-bottom: 4rem;
   font-size: 2.5rem;
+  text-align: center;
   &::before {
     position: absolute;
     content: '';
@@ -41,9 +42,26 @@
 }
 
 .person__desc {
+  text-align: center;
   // margin-bottom: 40px;
 }
 
 .person__swiper {
   margin-top: 5.2rem;
+  margin-bottom: 10rem;
+}
+
+.person__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 11.8rem;
+  padding-bottom: 3.8rem;
+}
+
+.person__item {
+  width: 23%;
+  margin-bottom: 8rem;
+  &:nth-child(4n+1) {
+    margin-left: 5rem;
+  }
 }
