@@ -99,16 +99,22 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.container {
-  width: 138.5rem;
+.container,
+.container-inside {
+  position: relative;
   .margin-inline(@a);
   .padding-inline(2rem);
 }
 
+.container {
+  width: 138.5rem;
+}
+
 .container-inside {
   width: 119.6rem;
-  .margin-inline(@a);
-  .padding-inline(2rem);
+  &--deeper {
+    width: 111.4rem;
+  }
 }
 
 .mobile-block {
