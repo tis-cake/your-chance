@@ -67,19 +67,17 @@
 
   font-weight: 400;
   font-family: @cinema;
-  font-size: 7.5rem;
+
   line-height: 7.5rem;
 
-  &--absolute {
+  // &--absolute {
     position: relative;
-    width: 62.5rem;
-    // position: absolute;
-    // top: 118px;
     left: -15.5rem;
+    width: 62.5rem;
 
     font-size: 9.5rem;
     text-align: right;
-  }
+  // }
 }
 
 .about__links-list {
@@ -111,4 +109,17 @@
 .about__swiper {
   padding-top: 6.5rem;
   padding-bottom: 6.5rem;
+}
+
+.about-contacts {
+  padding-bottom: 5.4rem;
+  .about__features-list {
+    margin-bottom: 1.2rem;
+  }
+  .about__title {
+    position: static;
+    width: auto;
+    font-size: 7.5rem;
+    text-align: left;
+  }
 }
