@@ -1,5 +1,4 @@
 .swiper {
-  // padding: 3rem 0 3rem;
 }
 
 .swiper__slide-wrap {
@@ -43,37 +42,48 @@
 
 @media (max-width: @tablet-width) {
   .swiper {
-    // padding: 3rem 0 3rem;
   }
 
   .swiper__slide-wrap {
-    height: 45.4rem;
+    height: 19.6rem;
   }
 
   .swiper__scrollbar {
     visibility: visible;
-    background-color: rgba(0,0,0,0);
+    // background-color: rgba(0,0,0,0);
+    background-color: #F7F7F7;
 
     .swiper-scrollbar-drag {
-      background: rgba(0,0,0,.1);
+      // background-color: rgba(0,0,0,.1);
+      background-color: #222222;
+      border-radius: 0;
     }
   }
 
   .swiper__container .swiper-wrapper {
-    padding-bottom: 10rem;
+    padding-bottom: 3.9rem;
   }
 
   .swiper__container.swiper-container-horizontal>.swiper-scrollbar {
     left: 10%;
-    bottom: 3px;
-    height: 3rem;
+    bottom: 0.3rem;
     width: 80%;
+    height: 0.6rem;
   }
 
   .swiper__button {
-    bottom: 2rem;
-    width: 6rem;
-    height: 9.5rem;
-    background-size: 1.9rem;
+    bottom: 1rem;
+    width: 2.7rem;
+    height: 3.4rem;
+
+    background-size: 1.3rem;
+  }
+
+  .swiper__button-next {
+    right: 2.5rem;
+  }
+
+  .swiper__button-prev {
+    left: 2.5rem;
   }
 }

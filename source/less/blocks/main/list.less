@@ -21,10 +21,12 @@
   .text-stroke(#000, 0.05rem);
 }
 
+.list__main-wrap,
 .list ul {
   box-sizing: border-box;
 }
 
+.list__item,
 .list li {
   position: relative;
 
@@ -59,10 +61,15 @@
   cursor: pointer;
 }
 
-.list__more-info:hover+.list__more-block,
-.list__more-info:focus+.list__more-block {
-  display: block;
+.list__more-wrap {
+  position: relative;
+  cursor: pointer;
 }
+
+// .list__more-info:hover+.list__more-block,
+// .list__more-info:focus+.list__more-block {
+//   display: block;
+// }
 
 .list__more-block {
   box-sizing: border-box;
@@ -107,4 +114,135 @@
   display: block;
   margin-bottom: 2.4rem;
   font-size: 2rem;
+}
+
+.list__more-close {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .tab .list__more-wrap:hover .list__more-block.focus,
+  .list__more-wrap:hover .list__more-block,
+  .list__more-block.focus {
+    display: block;
+  }
+
+  /*если элемент в фокусе с клавиатуры - убрать hover*/
+  .tab .list__more-wrap:hover .list__more-block {
+    display: none;
+  }
+
+  // .list__more-info:hover+.list__more-block,
+  // .list__more-info:focus+.list__more-block {
+  //   display: block;
+  // }
+}
+
+@media (max-width: @tablet-width) {
+  .list {
+  }
+
+  .list__title {
+    margin-bottom: 2rem;
+    font-size: 6rem;
+  }
+
+  .list__list-title {
+    margin-bottom: 2.8rem;
+
+    font-size: 2rem;
+    line-height: 3.7rem;
+    text-shadow: initial;
+  }
+
+  .list__main-wrap,
+  .list ul {
+    // box-sizing: border-box;
+  }
+
+  .list__item,
+  .list li {
+    margin-bottom: 1.9rem;
+    padding-left: 4rem;
+    padding-bottom: 1.8rem;
+
+    font-size: 1.6rem;
+
+    &::before {
+      top: -0.3rem;
+      left: 0.1rem;
+
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  .list__more-info {
+    // font-size: 16px;
+    // font-size: 16px;
+    // position: relative;
+    // margin-left: auto;
+    // cursor: pointer;
+  }
+
+  // li:last-child .list__more-block {
+  //   display: block;
+  // }
+
+  .list__more-block {
+    display: none;
+
+    z-index: 100;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
+
+    &::before {
+      content: none;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .list__more-title {
+    display: block;
+    margin-bottom: 2.4rem;
+    font-size: 2rem;
+  }
+
+  .list__more-close {
+    position: absolute;
+    top: 6px;
+    right: 17px;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    color: transparent;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 0;
+
+      width: 110%;
+      height: 2px;
+
+      background-color: #000;
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
 }

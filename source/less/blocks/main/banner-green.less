@@ -32,6 +32,11 @@
   &-item {
     display: block;
   }
+  &--mw {
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .banner-green__main-title {
@@ -43,6 +48,9 @@
     margin-bottom: 0;
     font-size: 35rem;
     line-height: 35rem;
+  }
+  &--desc-hidden {
+    display: none;
   }
 }
 
@@ -59,6 +67,10 @@
 
   .banner-green__title {
     font-size: 6rem;
+    line-height: 6rem;
+    &-item {
+      display: block;
+    }
   }
 
   .banner-green__desc {
@@ -68,18 +80,42 @@
       margin-left: auto;
       margin-right: auto;
     }
+    &--mw {
+      max-width: none;
+    }
     &-item {
       // display: block;
     }
   }
 
+  // .banner-green__main-title {
+  //   margin-bottom: 1.3rem;
+  //   font-size: 30rem;
+  //   line-height: 30rem;
+  //   &--fz350 {
+  //     margin-top: 2.2rem;
+  //     margin-bottom: 0;
+  //     font-size: 35rem;
+  //     line-height: 35rem;
+  //   }
+  // }
+
   .banner-green__main-title {
-    margin-top: 4.3rem;
-    margin-bottom: 4.3rem;
-    // font-size: 30rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.8rem;
+    font-size: 11rem;
+    line-height: 10rem;
     &--fz350 {
+      margin-top: 4.3rem;
+      margin-bottom: 4.3rem;
       font-size: 20rem;
       line-height: 17rem;
+    }
+    &--desc-hidden {
+      display: inline-block;
+    }
+    &--mob-hidden {
+      display: none;
     }
   }
 }
