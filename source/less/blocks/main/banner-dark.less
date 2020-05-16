@@ -105,7 +105,7 @@
       // left: 86.8rem;
       width: 19.5rem;
       height: 32.8rem;
-      background-image: url('../img/dark/dark3.png');
+      background-image: url('../img/dark/dark3-d.png');
     }
   }
 }
@@ -120,6 +120,14 @@
 
 
   .banner-dark__title {
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+    padding-top: 6.8rem;
+
+    font-size: 14.5rem;
+    line-height: 13rem;
+    text-align: right;
+    text-shadow: none;
     &-item {
       margin-left: 0
     }
@@ -143,10 +151,6 @@
     }
   }
 
-  .banner-dark__link {
-    // display: inline-block;
-  }
-
   .banner-dark__emphasis {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -156,8 +160,11 @@
     .banner-dark__title {
       padding-top: 13rem;
       margin-bottom: 2.8rem;
+      margin-left: auto;
+      margin-right: auto;
       font-size: 14.0rem;
       line-height: 14rem;
+      text-align: center;
       &-img {
         top: 1.9rem;
         left: 36.7%;
@@ -170,20 +177,32 @@
   .banner-dark-work {
     .banner-dark__title {
       margin-bottom: 2rem;
-      margin-left: 2.8rem;
-      margin-right: 2.8rem;
       padding-top: 18.1rem;
       font-size: 11.5rem;
       line-height: 11rem;
 
       letter-spacing: 2.8px;
-
-      text-align: right;
       &-img {
         top: 9.7rem;
         left: -0.4rem;
         width: 17.4rem;
         height: 21.6rem;
+      }
+    }
+  }
+
+  .banner-dark-heal {
+    .banner-dark__title {
+      z-index: 1;
+      letter-spacing: 4.6px;
+      &-img {
+        z-index: -1;
+        top: 9.3rem;
+        left: 0.4rem;
+        width: 15.3rem;
+        height: 25.8rem;
+        background-image: url('../img/dark/dark3-m.png');
+        background-size: contain;
       }
     }
   }

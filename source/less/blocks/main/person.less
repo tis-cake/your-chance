@@ -21,12 +21,16 @@
   .img-cover;
 }
 
+.person__desc-wrap {
+  text-align: center;
+}
+
 .person__title {
   position: relative;
   display: block;
   margin-bottom: 4rem;
   font-size: 2.5rem;
-  text-align: center;
+  // text-align: center;
   &::before {
     position: absolute;
     content: '';
@@ -42,8 +46,13 @@
 }
 
 .person__desc {
-  text-align: center;
+  // text-align: center;
   // margin-bottom: 40px;
+}
+
+.person__title,
+.person__desc {
+  // text-align: center;
 }
 
 .person__swiper {
@@ -63,5 +72,105 @@
   margin-bottom: 8rem;
   &:nth-child(4n+1) {
     margin-left: 5rem;
+  }
+}
+
+
+@media (max-width: @tablet-width) {
+  .person {
+  }
+
+  .person__content-wrap {
+    text-align: center;
+  }
+
+  .person__img-wrap {
+    // width: 20.5rem;
+    // height: 20.5rem;
+
+    // margin-left: auto;
+    // margin-right: auto;
+    // margin-bottom: 2.3rem;
+  }
+
+  .person__title {
+    // position: relative;
+    // display: block;
+    // margin-bottom: 4rem;
+    // font-size: 2.5rem;
+    // text-align: center;
+    // &::before {
+    //   position: absolute;
+    //   content: '';
+    //   bottom: -2.2rem;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+
+    //   width: 5.6rem;
+    //   height: 0.4rem;
+
+    //   background-color: @green;
+    // }
+  }
+
+  .person__desc {
+    // text-align: center;
+    // margin-bottom: 40px;
+  }
+
+  .person__swiper {
+    margin-top: 5.2rem;
+    margin-bottom: 10rem;
+  }
+
+  .person__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5.8rem;
+    padding-bottom: 9.4rem;
+
+    .person__img-wrap {
+      width: 18.8rem;
+      height: 18.8rem;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+    .person__desc-wrap {
+      width: 15rem;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 1.8rem;
+
+      text-align: left;
+    }
+    .person__title {
+      margin-bottom: 3.5rem;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      &::before {
+        bottom: -1.9rem;
+        left: 0;
+        transform: none;
+        width: 2.6rem;
+      }
+    }
+    .person__desc {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  .person__item {
+    width: 100%;
+    margin-bottom: 6.7rem;
+    &:nth-child(4n+1) {
+      margin-left: 0;
+    }
+  }
+
+  .person__link {
+    display: flex;
+    width: 100%;
   }
 }

@@ -31,9 +31,10 @@
   }
 }
 
-@media (max-width: @mobile-width) {
+@media (max-width: @tablet-width) {
   .breadcrumbs {
-    // margin-bottom: @m89px;
+    // margin-top: 5.7rem;
+    // margin-bottom: 5.7rem;
   }
 
   .breadcrumbs__list {
@@ -41,14 +42,13 @@
   }
 
   .breadcrumbs__item {
-    // margin-right: @m65px;
-    // margin-bottom: @m25px;
-    // font-size: @m25px;
-    // &:last-child {
-    //   margin-right: 0;
-    // }
-    // &::after {
-    //   right: -@m35px;
-    // }
+    margin-right: 3.5rem;
+    margin-bottom: 1rem;
+    &::after {
+      right: -2.2rem;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

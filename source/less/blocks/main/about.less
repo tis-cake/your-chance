@@ -136,9 +136,8 @@
 
   .about__map-wrap {
     width: 100%;
-    // height: 38.8rem;
-    margin-top: 96px;
-    margin-bottom: 27px;
+    margin-top: 9.6rem;
+    margin-bottom: 2.7rem;
   }
 
   .about__content-wrap {
@@ -152,41 +151,37 @@
 
     width: 87.3%;
     margin-bottom: 0;
-
-    // font-size: 2.5rem;
-    // line-height: 2.5rem;
-    // letter-spacing: 0.05em;
   }
 
-  .about__feature-item {
-    &--center {
-      // letter-spacing: initial;
-    }
-    &--big {
-      // font-family: @droid;
-      // font-size: 4rem;
-      // line-height: 4.8rem;
-      // letter-spacing: initial;
-    }
-    &:first-child {
-      // width: 24.5%;
-      // border-right: 0.2rem solid @dark-brown;
-    }
-    &:last-child {
-      // text-align: right;
-      // width: 30%;
-      // border-left: 0.2rem solid @dark-brown;
-    }
-  }
+  // .about__feature-item {
+  //   &--center {
+  //     // letter-spacing: initial;
+  //   }
+  //   &--big {
+  //     // font-family: @droid;
+  //     // font-size: 4rem;
+  //     // line-height: 4.8rem;
+  //     // letter-spacing: initial;
+  //   }
+  //   &:first-child {
+  //     // width: 24.5%;
+  //     // border-right: 0.2rem solid @dark-brown;
+  //   }
+  //   &:last-child {
+  //     // text-align: right;
+  //     // width: 30%;
+  //     // border-left: 0.2rem solid @dark-brown;
+  //   }
+  // }
 
   .about__title {
     position: static;
     left: 0;
     width: auto;
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
 
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 6rem;
+    line-height: 6rem;
     text-align: left;
   }
 
@@ -197,39 +192,46 @@
 
   .about__link-item {
     &:first-child {
-      width: 115px;
+      // width: 11.5rem;
+      width: 30%;
       margin-right: 0;
     }
     &:last-child {
-      width: 185px;
-      margin-right: 21px;
+      // width: 18.5rem;
+      width: 50%;
+      margin-right: 2.1rem;
     }
   }
 
-  .about__desc {
-    // margin-bottom: 2.2rem;
-  }
-
-  .about__link {
-    // margin-bottom: 0.5rem;
-  }
-
   .about__swiper {
-    // padding-top: 6.5rem;
     padding-bottom: 0;
   }
 
   .about-contacts {
-    padding-bottom: 5.4rem;
+    padding-bottom: 0rem;
     .about__features-list {
-      margin-bottom: 1.2rem;
+      margin-bottom: 0;
+    }
+    .about__feature-item {
+      &:first-child {
+        display: none;
+      }
+      &:last-child {
+        width: 43.2%;
+      }
     }
     .about__title {
-      position: static;
-      width: auto;
-      font-size: 7.5rem;
-      text-align: left;
+      font-size: 6rem;
+      line-height: 6rem;
     }
   }
+}
 
+@media (max-width: 24em) {
+  .about__link-item {
+    justify-content: space-between;
+    &:first-child {
+      width: 40%;
+    }
+  }
 }
