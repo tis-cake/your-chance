@@ -1,6 +1,15 @@
 .banner-green {
   color: @dark-brown;
   background-color: @green;
+
+  &--white {
+    color: @green;
+    background-color: #fff;
+    .banner-green__desc,
+    .banner-green__link {
+      color: #626060;
+    }
+  }
 }
 
 .banner-green__content-wrap {
@@ -54,10 +63,17 @@
   }
 }
 
+.banner-green__link {
+  display: inline-block;
+  // font-size: 3rem;
+}
+
 @media (max-width: @tablet-width) {
   .banner-green__content-wrap {
     padding-top: 7rem;
     padding-bottom: 4rem;
+
+    .padding-inline(1rem);
   }
 
   .banner-green__sub-title {
@@ -74,7 +90,6 @@
   }
 
   .banner-green__desc {
-    // line-height: 2.5rem;
     &--break {
       max-width: 32rem;
       margin-left: auto;
@@ -88,30 +103,26 @@
     }
   }
 
-  // .banner-green__main-title {
-  //   margin-bottom: 1.3rem;
-  //   font-size: 30rem;
-  //   line-height: 30rem;
-  //   &--fz350 {
-  //     margin-top: 2.2rem;
-  //     margin-bottom: 0;
-  //     font-size: 35rem;
-  //     line-height: 35rem;
-  //   }
-  // }
-
   .banner-green__main-title {
     margin-top: 1.3rem;
     margin-bottom: 1.8rem;
     font-size: 11rem;
     line-height: 10rem;
+    &-item {
+      display: block;
+    }
     &--fz350 {
       margin-top: 4.3rem;
       margin-bottom: 4.3rem;
       font-size: 20rem;
       line-height: 17rem;
     }
-    &--fz-big {
+    &--fz200m {
+      margin-bottom: 3.4rem;
+      font-size: 20rem;
+      line-height: 17rem;
+    }
+    &--fz140m {
       font-size: 14rem;
       line-height: 13rem;
     }
@@ -121,6 +132,11 @@
     &--mob-hidden {
       display: none;
     }
+  }
+
+  .banner-green__link {
+    // display: inline-block;
+    // font-size: 3rem;
   }
 }
 

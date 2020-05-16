@@ -755,6 +755,14 @@ input[type="radio"].visually-hidden {
   color: #2C2C2C;
   background-color: #67ED81;
 }
+.banner-green--white {
+  color: #67ED81;
+  background-color: #fff;
+}
+.banner-green--white .banner-green__desc,
+.banner-green--white .banner-green__link {
+  color: #626060;
+}
 .banner-green__content-wrap {
   padding-top: 8.5rem;
   padding-bottom: 8.5rem;
@@ -799,10 +807,15 @@ input[type="radio"].visually-hidden {
 .banner-green__main-title--desc-hidden {
   display: none;
 }
+.banner-green__link {
+  display: inline-block;
+}
 @media (max-width: 48em) {
   .banner-green__content-wrap {
     padding-top: 7rem;
     padding-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .banner-green__sub-title {
     margin-bottom: 2rem;
@@ -829,13 +842,21 @@ input[type="radio"].visually-hidden {
     font-size: 11rem;
     line-height: 10rem;
   }
+  .banner-green__main-title-item {
+    display: block;
+  }
   .banner-green__main-title--fz350 {
     margin-top: 4.3rem;
     margin-bottom: 4.3rem;
     font-size: 20rem;
     line-height: 17rem;
   }
-  .banner-green__main-title--fz-big {
+  .banner-green__main-title--fz200m {
+    margin-bottom: 3.4rem;
+    font-size: 20rem;
+    line-height: 17rem;
+  }
+  .banner-green__main-title--fz140m {
     font-size: 14rem;
     line-height: 13rem;
   }
@@ -1983,6 +2004,72 @@ input[type="radio"].visually-hidden {
   .person__link {
     display: flex;
     width: 100%;
+  }
+}
+.reviews {
+  padding-top: 1.8rem;
+  padding-bottom: 13.5rem;
+}
+.reviews__item {
+  margin-left: 4rem;
+  margin-right: 16.5rem;
+  margin-bottom: 7.8rem;
+}
+.reviews__item:last-child {
+  margin-bottom: 0;
+}
+.reviews__blockquote {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding-top: 4.8rem;
+}
+.reviews__blockquote:last-child {
+  margin-bottom: 0;
+}
+.reviews__datetime-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.7rem;
+  height: 7.7rem;
+  font-family: 'Droid', 'Arial', sans-serif;
+  font-size: 3.5rem;
+  line-height: 2.8rem;
+  border-radius: 50%;
+  background-color: #67ED81;
+}
+.reviews__author-name {
+  display: inline-block;
+  margin-left: 7.6rem;
+  margin-bottom: 1.9rem;
+  font-size: 3rem;
+  font-style: normal;
+  line-height: 3.5rem;
+}
+.reviews__text {
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+}
+@media (max-width: 48em) {
+  .reviews {
+    padding-top: 4.5rem;
+    padding-bottom: 9rem;
+  }
+  .reviews__item {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 6.5rem;
+  }
+  .reviews__author-name {
+    margin-left: 8.9rem;
+  }
+  .reviews__text {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 .footer {
