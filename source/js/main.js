@@ -119,3 +119,6 @@ function closeModal(element) {
     body.classList.remove('noscroll');
   }
 }
+
+// lightgallery
+lightGallery(document.querySelector('#lightgallery'));

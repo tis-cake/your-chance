@@ -11,7 +11,8 @@
     <link rel="preload" href="fonts/Circe/regular/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="">
 
     <link rel="stylesheet" href="css/normalise.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/lightgallery.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -190,7 +191,7 @@
                 </li>
                 <li class="about__link-item">
                   <p class="about__desc">Посетите центр чтобы убедиться в правильности выбора.</p>
-                  <a href="#" class="about__link link modal-callback">Хочу на экскурсию в центр</a>
+                  <a href="#" class="about__link link modal-excursion">Хочу на экскурсию в центр</a>
                 </li>
               </ul>
             </div>
@@ -199,26 +200,26 @@
         <div class="container-inside container-inside--deeper">
           <div class="about__swiper swiper">
             <div class="swiper-container swiper__container" id="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide swiper__slide-wrap">
+              <div class="swiper-wrapper" id="lightgallery">
+                <a href="img/services/services1.jpg" class="swiper-slide swiper__slide-wrap">
                   <img class="swiper__img" src="img/services/services1.jpg" alt="">
-                </div>
+                </a>
 
-                <div class="swiper-slide swiper__slide-wrap">
+                <a href="img/services/services2.jpg" class="swiper-slide swiper__slide-wrap">
                   <img class="swiper__img" src="img/services/services2.jpg" alt="">
-                </div>
+                </a>
 
-                <div class="swiper-slide swiper__slide-wrap">
+                <a href="img/services/services3.jpg" class="swiper-slide swiper__slide-wrap">
                   <img class="swiper__img" src="img/services/services3.jpg" alt="">
-                </div>
+                </a>
 
-                <div class="swiper-slide swiper__slide-wrap">
-                  <img class="swiper__img" src="img/services/services4.jpg" alt="">
-                </div>
+                <a href="img/services/services2.jpg" class="swiper-slide swiper__slide-wrap">
+                  <img class="swiper__img" src="img/services/services2.jpg" alt="">
+                </a>
 
-                <div class="swiper-slide swiper__slide-wrap">
-                  <img class="swiper__img" src="img/services/services5.jpg" alt="">
-                </div>
+                <a href="img/services/services1.jpg" class="swiper-slide swiper__slide-wrap">
+                  <img class="swiper__img" src="img/services/services1.jpg" alt="">
+                </a>
               </div>
               <div class="swiper-scrollbar swiper__scrollbar"></div>
             </div>
@@ -699,10 +700,15 @@
     <div class="overlay"></div>
 
     <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/lightgallery/lightgallery.min.js"></script>
+    <script src="js/libs/lightgallery/lg-zoom.min.js"></script>
+
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/polyfills/objectFitPolyfill.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/map.js"></script>
   </body>
 </html>

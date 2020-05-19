@@ -11,7 +11,8 @@
     <link rel="preload" href="fonts/Circe/regular/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="">
 
     <link rel="stylesheet" href="css/normalise.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/lightgallery.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -204,7 +205,7 @@
               </p>
               <span class="link services__link">Наши специалисты</span>
             </a>
-            <a href="#" class="services__column services__column--horizontal">
+            <a href="about.html#gallery" class="services__column services__column--horizontal">
               <div class="services__img-wrap">
                 <img class="services__img" src="img/services/services2.jpg" alt="Реабилитационный центр">
               </div>
@@ -215,7 +216,7 @@
               </p>
               <span class="link services__link">Галлерея центра</span>
             </a>
-            <a href="#" class="modal-callback services__column services__column--vertical">
+            <a href="#" class="modal-excursion services__column services__column--vertical">
               <div class="services__img-wrap">
                 <img class="services__img" src="img/services/services3.jpg" alt="Экскурсии">
               </div>
@@ -540,8 +541,16 @@
     <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
     <!-- <script src="js/jquery.maskedinput.min.js"></script> -->
 
-    <script src="js/swiper.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/lightgallery/lightgallery.min.js"></script>
+    <script src="js/libs/lightgallery/lg-zoom.min.js"></script>
+
+    <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
+
     <script src="js/polyfills/objectFitPolyfill.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
