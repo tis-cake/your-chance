@@ -6,7 +6,7 @@
     <meta name="description" content="«Твой шанс»">
     <title>Твой шанс</title>
 
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">
 
     <link rel="preload" href="fonts/Circe/regular/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="">
 
@@ -172,8 +172,14 @@
     <main class="main">
       <section class="main-info">
         <div class="main-info__bg-wrap main-info__bg-wrap--overlay">
-          <img class="main-info__bg-img desktop-block" src="img/main-info/main1-d.jpg" alt="Реабилитация для всех типов зависимости">
-          <img class="main-info__bg-img mobile-block" src="img/main-info/main1-m.jpg" alt="Реабилитация для всех типов зависимости">
+          <!-- <img class="main-info__bg-img desktop-block" src="img/main-info/main1-d.jpg" alt="Реабилитация для всех типов зависимости"> -->
+          <!-- <img class="main-info__bg-img mobile-block" src="img/main-info/main1-m.jpg" alt="Реабилитация для всех типов зависимости"> -->
+          <video class="main-info__bg-video" autoplay preload="metadata" width="100%" height="100%">
+            <source src="video/without_sound.mp4" type="video/mp4">
+            <!-- если будут альтернативные форматы -->
+            <!-- <source src="without_sound.ogv" type="video/ogg"> -->
+            <!-- <source src="without_sound.webm" type="video/webm"> -->
+          </video>
         </div>
         <div class="main-info__content-wrap">
           <p class="main-info__sub-title">50 000 руб./месяц</p>
@@ -286,7 +292,7 @@
         </div>
       </article>
 
-      <section class="video-review">
+      <section class="video-review video-review--gray">
         <div class="container">
           <div class="video-review__columns-wrap">
             <div class="video-review__column">
@@ -294,8 +300,14 @@
               <p class="video-review__sub-title">Современное оборудованное здание</p>
             </div>
             <div class="video-review__column video-review__video-wrap">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NkRkuI0ZgX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NkRkuI0ZgX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
+              <video class="video-review__video" controls preload="metadata" poster="video/video-preview.png" width="100%" height="100%">
+                <source src="video/video1.mp4" type="video/mp4">
+                <!-- если будут альтернативные форматы -->
+                <!-- <source src="video1.ogv" type="video/ogg"> -->
+                <!-- <source src="video1.webm" type="video/webm"> -->
+              </video>
             </div>
             <div class="video-review__column video-review__column--right">
               <p class="video-review__title">оснащение процедурным кабинетом</p>
