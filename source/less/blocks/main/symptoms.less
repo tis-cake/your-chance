@@ -1,0 +1,42 @@
+.symptoms {
+  padding-top: 6.6rem;
+  padding-bottom: 6.6rem;
+}
+
+.symptoms__title {
+  margin-bottom: 6.2rem;
+
+  font-family: @cinema;
+  font-size: 9rem;
+  line-height: 6.6rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.symptoms__list {
+  display: grid;
+  grid-gap: 3.3rem;
+  grid-template-columns: repeat(4, 32.1rem);
+  grid-template-rows: repeat(2, 38.6rem);
+}
+
+.symptoms__item {
+  box-sizing: border-box;
+
+  font-family: @cinema;
+  font-size: 6.5rem;
+  line-height: 7rem;
+  text-align: center;
+  background-color: @green;
+
+  &--green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .padding-inline(3rem);
+  }
+}
+
+.symptoms__img {
+  .img-cover;
+}

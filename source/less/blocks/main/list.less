@@ -10,6 +10,11 @@
   line-height: 6.6rem;
 
   letter-spacing: 0.02em;
+
+  &--without-list-title {
+    // margin-bottom: 6.3rem;
+    margin-bottom: 5.5rem;
+  }
 }
 
 .list__list-title {
@@ -22,7 +27,8 @@
 }
 
 .list__main-wrap,
-.list ul {
+.list ul,
+.list ol {
   box-sizing: border-box;
 }
 
@@ -38,6 +44,12 @@
 
   border-bottom: 0.1rem solid #E2E2E2;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.list ul li {
   &::before {
     position: absolute;
     content: '';
@@ -53,6 +65,23 @@
     background-size: contain;
     background-position: center;
   }
+}
+
+.list ol li {
+  &::before {
+    counter-increment: olCount;
+    content: counter(olCount);
+    position: absolute;
+
+    top: -0.6rem;
+    left: 0;
+
+    font-size: 3rem;
+  }
+}
+
+.list ol {
+  counter-reset: olCount;
 }
 
 .list__more-info {
@@ -165,9 +194,10 @@
     margin-bottom: 1.9rem;
     padding-left: 4rem;
     padding-bottom: 1.8rem;
-
     font-size: 1.6rem;
+  }
 
+  .list ul li {
     &::before {
       top: -0.3rem;
       left: 0.1rem;
