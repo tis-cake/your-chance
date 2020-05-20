@@ -4,16 +4,13 @@
 }
 
 .article__title {
-  margin-bottom: 9rem;
+  margin-bottom: 5.5rem;
 
   font-family: @cinema;
   font-weight: 400;
-  font-size: 22rem;
-  line-height: 22rem;
-  letter-spacing: 0.5rem;
-  word-spacing: 4rem;
+  font-size: 18rem;
+  // line-height: 13.2rem;
   text-transform: uppercase;
-  // letter-spacing: 0.03em;
 
   color: @dark-brown;
 
@@ -33,11 +30,19 @@
   width: 87rem;
   margin-top: 1.5rem;
 
-  font-size: 2rem;
-  line-height: 3.7rem;
+  // font-size: 2rem;
+  // line-height: 3.7rem;
+
+  font-size: 1.7rem;
+  line-height: 3rem;
+
+  h3 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
 
   p {
-
+    margin-bottom: 3rem;
   }
 
   ol {
@@ -56,18 +61,43 @@
 }
 
 .article__column-right {
-  width: 40.5rem;
+  // width: 40.5rem;
+  width: 32.6rem;
 
   h3 {
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
 
     font-size: 3rem;
     line-height: 5.5rem;
   }
 
-  p {
+  p:not(.services-column__desc-wrap) {
     font-size: 1.6rem;
     line-height: 2.9rem;
+  }
+}
+
+.article__services-column {
+  margin-top: 90px;
+}
+
+.article-number {
+  .article__title {
+    margin-bottom: 9rem;
+    font-size: 22rem;
+    line-height: 22rem;
+    letter-spacing: 0.5rem;
+    word-spacing: 4rem;
+  }
+  .articel__column-left {
+    font-size: 2rem;
+    line-height: 3.7rem;
+  }
+  .article__column-right {
+    width: 40.5rem;
+    h3 {
+      margin-bottom: 5rem;
+    }
   }
 }
 
@@ -77,27 +107,11 @@
     margin-bottom: 9.5rem;
   }
 
-  .article-number {
-    max-width: 17rem;
-    padding-left: 13.5rem;
-    .article__title-number {
-      position: absolute;
-      top: 7.5rem;
-      left: 0;
-
-      font-size: 25rem;
-    }
-  }
-
   .article__title {
     position: relative;
-    margin-bottom: 6.6rem;
-
-    font-size: 8.5rem;
-    line-height: 7.5rem;
-
-    word-spacing: initial;
-
+    // margin-bottom: 5.5rem;
+    font-size: 7rem;
+    line-height: 7rem;
     &-number {
       font-size: inherit;
     }
@@ -145,11 +159,43 @@
       line-height: 37px;
     }
 
-    p {
+    p:not(.services-column__desc-wrap) {
       // font-size: 1.3rem;
       // line-height: 2.4rem;
       font-size: 13px;
       line-height: 24px;
+    }
+  }
+
+  .article__services-column {}
+
+  .article-number {
+    .article__title {
+      max-width: 17rem;
+      margin-bottom: 6.6rem;
+      padding-left: 13.5rem;
+
+      font-size: 8.5rem;
+      line-height: 7.5rem;
+      word-spacing: initial;
+
+      &-number {
+        position: absolute;
+        top: 7.5rem;
+        left: 0;
+
+        font-size: 25rem;
+      }
+    }
+    .articel__column-left {
+      font-size: 16px;
+      line-height: 29px;
+    }
+    .article__column-right {
+      width: auto;
+      h3 {
+        margin-bottom: 2rem;
+      }
     }
   }
 }

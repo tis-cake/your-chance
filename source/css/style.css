@@ -539,6 +539,7 @@ input[type="radio"].visually-hidden {
   z-index: -1;
   width: 100%;
   height: 54rem;
+  background-color: #000;
 }
 .main-info__bg-wrap--overlay::before {
   position: absolute;
@@ -1254,13 +1255,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 19.3rem;
 }
 .article__title {
-  margin-bottom: 9rem;
+  margin-bottom: 5.5rem;
   font-family: 'Cinematografica', 'Arial', sans-serif;
   font-weight: 400;
-  font-size: 22rem;
-  line-height: 22rem;
-  letter-spacing: 0.5rem;
-  word-spacing: 4rem;
+  font-size: 18rem;
   text-transform: uppercase;
   color: #2C2C2C;
 }
@@ -1276,8 +1274,15 @@ input[type="radio"].visually-hidden {
 .articel__column-left {
   width: 87rem;
   margin-top: 1.5rem;
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+.articel__column-left h3 {
+  margin-bottom: 3rem;
   font-size: 2rem;
-  line-height: 3.7rem;
+}
+.articel__column-left p {
+  margin-bottom: 3rem;
 }
 .articel__column-left ol {
   margin-top: 3.7rem;
@@ -1291,38 +1296,46 @@ input[type="radio"].visually-hidden {
   padding-right: 1rem;
 }
 .article__column-right {
-  width: 40.5rem;
+  width: 32.6rem;
 }
 .article__column-right h3 {
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
   font-size: 3rem;
   line-height: 5.5rem;
 }
-.article__column-right p {
+.article__column-right p:not(.services-column__desc-wrap) {
   font-size: 1.6rem;
   line-height: 2.9rem;
+}
+.article__services-column {
+  margin-top: 90px;
+}
+.article-number .article__title {
+  margin-bottom: 9rem;
+  font-size: 22rem;
+  line-height: 22rem;
+  letter-spacing: 0.5rem;
+  word-spacing: 4rem;
+}
+.article-number .articel__column-left {
+  font-size: 2rem;
+  line-height: 3.7rem;
+}
+.article-number .article__column-right {
+  width: 40.5rem;
+}
+.article-number .article__column-right h3 {
+  margin-bottom: 5rem;
 }
 @media (max-width: 48em) {
   .article {
     margin-top: 4rem;
     margin-bottom: 9.5rem;
   }
-  .article-number {
-    max-width: 17rem;
-    padding-left: 13.5rem;
-  }
-  .article-number .article__title-number {
-    position: absolute;
-    top: 7.5rem;
-    left: 0;
-    font-size: 25rem;
-  }
   .article__title {
     position: relative;
-    margin-bottom: 6.6rem;
-    font-size: 8.5rem;
-    line-height: 7.5rem;
-    word-spacing: initial;
+    font-size: 7rem;
+    line-height: 7rem;
   }
   .article__title-number {
     font-size: inherit;
@@ -1349,9 +1362,33 @@ input[type="radio"].visually-hidden {
     font-size: 20px;
     line-height: 37px;
   }
-  .article__column-right p {
+  .article__column-right p:not(.services-column__desc-wrap) {
     font-size: 13px;
     line-height: 24px;
+  }
+  .article-number .article__title {
+    max-width: 17rem;
+    margin-bottom: 6.6rem;
+    padding-left: 13.5rem;
+    font-size: 8.5rem;
+    line-height: 7.5rem;
+    word-spacing: initial;
+  }
+  .article-number .article__title-number {
+    position: absolute;
+    top: 7.5rem;
+    left: 0;
+    font-size: 25rem;
+  }
+  .article-number .articel__column-left {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .article-number .article__column-right {
+    width: auto;
+  }
+  .article-number .article__column-right h3 {
+    margin-bottom: 2rem;
   }
 }
 .about {
@@ -1865,8 +1902,8 @@ input[type="radio"].visually-hidden {
 .rating__img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .rating__img-desc-wrap {
   position: absolute;
@@ -2369,6 +2406,40 @@ input[type="radio"].visually-hidden {
 }
 .stages__desc {
   line-height: 2.7rem;
+}
+.services-column__item {
+  margin-bottom: 8.8rem;
+}
+.services-column__desc-wrap {
+  box-sizing: border-box;
+  padding: 3.6rem 4rem 3.6rem 2.2rem;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  background-color: #67ED81;
+}
+.services-column__desc-wrap--red {
+  padding-right: 2.2rem;
+  background-color: #F65471;
+}
+.services-column__desc-wrap--dark {
+  padding-right: 5.5rem;
+  color: #fff;
+  background-color: #474747;
+}
+.services-column__title {
+  margin-bottom: 1.5rem;
+  font-family: 'Cinematografica', 'Arial', sans-serif;
+  font-size: 6.5rem;
+  line-height: 6rem;
+}
+.services-column__more {
+  padding: 3rem 2.2rem;
+  background-color: #F8F8F8;
+}
+.services-column__title,
+.services-column__desc,
+.services-column__more {
+  display: block;
 }
 .footer {
   padding-top: 9rem;
