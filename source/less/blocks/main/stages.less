@@ -76,3 +76,59 @@
 .stages__desc {
   line-height: 2.7rem;
 }
+
+@media (max-width: @tablet-width) {
+  .stages {
+    padding-top: 7.7rem;
+    padding-bottom: 7.7rem;
+  }
+
+  .stages__title {
+    margin-bottom: 5.5rem;
+
+    font-size: 5rem;
+    line-height: 3.7rem;
+  }
+
+  .stages__list {}
+
+  .stages__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4.4rem;
+    &:nth-child(4n+1) {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .stages__count {
+    // width: 6.1rem;
+    // height: 6.1rem;
+    width: 61px;
+    height: 61px;
+    margin-bottom: 16px;
+    &::before {
+      // font-size: 4rem;
+      font-size: 40px;
+    }
+  }
+
+  .stages__sub-title {
+    // margin-bottom: 0.9rem;
+    // font-size: 2rem;
+    // line-height: 2.8rem;
+    margin-bottom: 9px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .stages__desc {
+    // font-size: 1.5rem;
+    // line-height: 2.2rem;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}

@@ -21,9 +21,30 @@
 .service-include__img-wrap {
   width: 67.5rem;
   min-height: 44.1rem;
-  // height: 441px;
+  // height: 44.1rem;
 }
 
 .service-include__img {
   .img-cover;
+}
+
+@media (max-width: @tablet-width) {
+  .service-include {
+    padding-top: 5.3rem;
+    padding-bottom: 5.3rem;
+  }
+
+  .service-include__content-wrap {
+    flex-wrap: wrap;
+  }
+
+  .service-include__list {
+    width: @a;
+  }
+
+  .service-include__img-wrap {
+    display: none;
+    width: @a;
+    min-height: 44.1rem;
+  }
 }

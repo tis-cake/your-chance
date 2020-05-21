@@ -16,8 +16,11 @@
 .symptoms__list {
   display: grid;
   grid-gap: 3.3rem;
-  grid-template-columns: repeat(4, 32.1rem);
-  grid-template-rows: repeat(2, 38.6rem);
+  grid-auto-flow: row dense;
+  // grid-template-columns: repeat(4, 32.1rem);
+  // grid-template-rows: repeat(2, 38.6rem);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .symptoms__item {
@@ -35,8 +38,92 @@
     align-items: center;
     .padding-inline(3rem);
   }
+
+  // &:nth-child(8n+5) {
+  //   grid-column: ~'2/3';
+  // }
+
+  // &:nth-child(8n+6) {
+  //   grid-column: ~'1/2';
+  // }
+
+  // &:nth-child(8n+7) {
+  //   grid-column: ~'4/5';
+  // }
+
+  // &:nth-child(8n) {
+  //   grid-column: ~'3/4';
+  // }
 }
 
 .symptoms__img {
   .img-cover;
+}
+
+/* шахматный порядок грид-сетки*/
+@media (min-width: @tablet-width) {
+  .symptoms__item {
+    &:nth-child(8n+5) {
+      grid-column: ~'2/3';
+    }
+
+    &:nth-child(8n+6) {
+      grid-column: ~'1/2';
+    }
+
+    &:nth-child(8n+7) {
+      grid-column: ~'4/5';
+    }
+
+    &:nth-child(8n) {
+      grid-column: ~'3/4';
+    }
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .symptoms {
+    padding-top: 3.8rem;
+    padding-bottom: 3.8rem;
+  }
+
+  .symptoms__title {
+    margin-bottom: 3.3rem;
+    .padding-inline(1rem);
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .symptoms__list {
+    display: grid;
+    grid-gap: 1.7rem;
+    // grid-auto-flow: row dense;
+    // grid-template-columns: repeat(2, 17.3rem);
+    // grid-template-rows: repeat(4, 20.8rem);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .symptoms__item {
+    // font-size: 3.5rem;
+    // line-height: 3.8rem;
+    font-size: 35px;
+    line-height: 38px;
+
+    &--green {
+      .padding-inline(2rem);
+    }
+
+    // &+.symptoms__item--green:nth-child(4n),
+    &:nth-child(4n+3) {
+      // grid-column: ~'1/2';
+      grid-column: ~'2/3';
+    }
+
+    // &:not(.symptoms__item--green):nth-child(4n+3),
+    &:nth-child(4n+4) {
+      // grid-column: ~'2/3';
+      grid-column: ~'1/2';
+    }
+  }
 }
