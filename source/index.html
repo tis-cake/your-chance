@@ -152,6 +152,9 @@
                   <li class="main-nav__subitem">
                     <a class="main-nav__sublink" href="reviews.html">Отзывы</a>
                   </li>
+                  <li class="main-nav__subitem mobile-block">
+                    <a class="main-nav__sublink" href="about.html">О центре</a>
+                  </li>
                   <li class="main-nav__subitem">
                     <a class="main-nav__sublink" href="masters.html">Специалисты</a>
                   </li>
@@ -175,8 +178,8 @@
         <div class="main-info__bg-wrap main-info__bg-wrap--overlay">
           <!-- <img class="main-info__bg-img desktop-block" src="img/main-info/main1-d.jpg" alt="Реабилитация для всех типов зависимости"> -->
           <!-- <img class="main-info__bg-img mobile-block" src="img/main-info/main1-m.jpg" alt="Реабилитация для всех типов зависимости"> -->
-          <video class="main-info__bg-video img-cover" data-object-fit="cover" autoplay loop preload="metadata">
-            <source src="video/without_sound.mp4" type="video/mp4">
+          <video class="main-info__bg-video img-cover" data-object-fit="cover" autoplay webkit-playsinline playsinline muted="muted" loop preload="metadata" src="video/without_sound.mp4" type="video/mp4">
+            <!-- <source src="video/without_sound.mp4" type="video/mp4"> -->
             <!-- если будут альтернативные форматы -->
             <!-- <source src="without_sound.ogv" type="video/ogg"> -->
             <!-- <source src="without_sound.webm" type="video/webm"> -->
@@ -525,23 +528,32 @@
       </div>
     </footer>
 
-    <!-- <section class="modal modal--callback">
+    <section class="modal modal--callback">
       <div class="modal-wrapper">
-        <h2 class="visually-hidden">Введите ваш номер телефона</h2> -->
-        <!-- <button class="modal__close">Закрыть окно</button> -->
-        <!-- <form class="modal__form" action="/echo" method="post">
+        <p class="modal__title">Введите ваш номер телефона</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
           <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 ( ___ ) ___ __ - __" required>
           <button class="modal__btn">Отправить</button>
         </form>
       </div>
-    </section> -->
+    </section>
+
+    <section class="modal modal--excursion">
+      <div class="modal-wrapper">
+        <p class="modal__title">Заявка на экскурсию в центр</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 ( ___ ) ___ __ - __" required>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
 
     <div class="overlay"></div>
 
-    <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
-    <!-- <script src="js/jquery.maskedinput.min.js"></script> -->
-
     <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/inputmask.min.js"></script>
     <script src="js/libs/lightgallery/lightgallery.min.js"></script>
     <script src="js/libs/lightgallery/lg-zoom.min.js"></script>
 

@@ -152,6 +152,9 @@
                   <li class="main-nav__subitem">
                     <a class="main-nav__sublink" href="reviews.html">Отзывы</a>
                   </li>
+                  <li class="main-nav__subitem mobile-block">
+                    <a class="main-nav__sublink" href="about.html">О центре</a>
+                  </li>
                   <li class="main-nav__subitem">
                     <a class="main-nav__sublink" href="masters.html">Специалисты</a>
                   </li>
@@ -380,9 +383,32 @@
       </div>
     </footer>
 
+    <section class="modal modal--callback">
+      <div class="modal-wrapper">
+        <p class="modal__title">Введите ваш номер телефона</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 ( ___ ) ___ __ - __" required>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="modal modal--excursion">
+      <div class="modal-wrapper">
+        <p class="modal__title">Заявка на экскурсию в центр</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 ( ___ ) ___ __ - __" required>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
     <div class="overlay"></div>
 
     <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/inputmask.min.js"></script>
     <script src="js/libs/lightgallery/lightgallery.min.js"></script>
     <script src="js/libs/lightgallery/lg-zoom.min.js"></script>
 
