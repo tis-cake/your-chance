@@ -3,7 +3,9 @@ const header = document.querySelector('header');
 const width = document.body.clientWidth;
 const height = document.body.clientHeigh;
 const anchors = document.querySelectorAll('a[href*="#"]'); // якоря
+const inputsTel = document.querySelectorAll('input[type="tel"]'); // поля с вводом телефона
 const overlay = document.querySelector('.overlay');
+const modals = document.querySelectorAll('.modal');
 
 // мобильное меню
 let menuToggle = header.querySelector(".menu-toggle");
@@ -38,6 +40,12 @@ if (width <= 756) {
   // });
 }
 
+// галерея фото
+lightGallery(document.querySelector('#lightgallery'));
+
+// маска на телефон
+Inputmask({"mask": "+7 ( 999 ) 999 99 - 99"}).mask(inputsTel);
+
 // вкладка "подробнее" у списка
 let moreBtnArr = document.querySelectorAll('.list__more-info');
 for (let moreBtn of moreBtnArr) {
@@ -66,59 +74,88 @@ for (let moreBtn of moreBtnArr) {
       // let currentMoreBlock = moreBtn.closest('.list__more-wrap').querySelector('.list__more-block');
       // let currentModalClose = currentMoreBlock.querySelector('.list__more-close');
 
-      openModal(currentMoreBlock);
+      // openModal(currentMoreBlock);
+      currentMoreBlock.classList.add('active');
+      overlay.classList.add('active');
 
-      currentModalClose.onclick = function() {
+      currentModalClose.onclick = () => {
         closeModal(currentMoreBlock);
       };
 
-      // шаблон
-      // let infoContainer = body.querySelector('.list-more__mobile-container');
-      // let infoTemplate = body.querySelector('#list-more-block').content;
-      // let infoTemplateBlock = infoTemplate.querySelector('.list__more-block');
-
-      // // получаем текст из выбранного элемента
-      // let infoTitleValue = currentMoreBlock.querySelector('.list__more-title').textContent;
-      // let infoTextValue = currentMoreBlock.querySelector('.list__more-text').textContent;
-
-      // // записываем полученные данные в шаблон
-      // let infoTemplateTitle = infoTemplateBlock.querySelector('.list__more-title');
-      // let infoTemplateText = infoTemplateBlock.querySelector('.list__more-text');
-      // infoTemplateTitle.textContent = infoTitleValue;
-      // infoTemplateText.textContent = infoTextValue;
-
-      // // клонируем и добавляем шаблон
-      // let info = infoTemplateBlock.cloneNode(true);
-      // infoContainer.appendChild(info);
-
-      // infoTemplateTitle.textContent = '';
-      // infoTemplateText.textContent = '';
-
-      // // оперделяем ключевые элементы в новом модальном окне
-      // let modalMoreBlock = infoContainer.querySelector('.list__more-block');
-      // let currentModalClose = infoContainer.querySelector('.list__more-close');
-
-      // openModal(modalMoreBlock);
-      // currentModalClose.onclick = function() {
-      //   closeModal(modalMoreBlock);
-      // };
+      overlay.ontouchstart = () => {
+        closeModal(currentMoreBlock);
+      };
     })
   }
 }
 
-function openModal(element) {
+// оставить телефон (модальное окно 1)
+let modalCallback = body.querySelector('.modal--callback');
+let modalCallbackArr = body.querySelectorAll('.modal-callback');
+for (let i = 0; i < modalCallbackArr.length; i++) {
+  let currentModal = modalCallbackArr[i];
+  currentModal.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    openModal(modalCallback, '.modal__input-phone');
+  })
+}
+
+// заявка на экскурсию (модальное окно 2)
+let modalExcursion = body.querySelector('.modal--excursion');
+let modalExcursionArr = body.querySelectorAll('.modal-excursion');
+for (let i = 0; i < modalExcursionArr.length; i++) {
+  let currentModal = modalExcursionArr[i];
+  currentModal.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    openModal(modalExcursion, '.modal__input-phone');
+  })
+}
+
+// кнопка close
+let modalClose = body.querySelector('.modal__close');
+modalClose.addEventListener('click', function() {
+  closeModal();
+})
+
+// нажат esc -> закрыть окно
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    closeModal();
+  }
+});
+
+// клик по оверлею (имитация клика вне модального окна)
+overlay.addEventListener('click', function() {
+  closeModal();
+});
+
+// тач по оверлею (имитация клика вне модального окна)
+overlay.addEventListener('touchstart', function() {
+  closeModal();
+});
+
+function openModal(element, focus) {
   element.classList.add('active');
   overlay.classList.add('active');
   body.classList.add('noscroll');
-}
 
-function closeModal(element) {
-  if (element.classList.contains('active')) {
-    element.classList.remove('active');
-    overlay.classList.remove('active');
-    body.classList.remove('noscroll');
+  if (focus) {
+    element.querySelector(focus).focus();
   }
 }
 
-// lightgallery
-lightGallery(document.querySelector('#lightgallery'));
+function closeModal(element) {
+  if (element && element.classList.contains('active')) {
+    element.classList.remove('active');
+  } else {
+    for (let i = 0; i < modals.length; i++) {
+      let modal = modals[i];
+      if (modal.classList.contains('active')) {
+        modal.classList.remove('active');
+      }
+    }
+  }
+
+  overlay.classList.remove('active');
+  body.classList.remove('noscroll');
+}
