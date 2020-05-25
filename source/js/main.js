@@ -30,14 +30,6 @@ if (width <= 756) {
 
     });
   }
-
-
-  // $('.main-nav-sub').click(function(evt) {
-  //   evt.preventDefault();
-  //   var currentSublist = $(this).closest('.main-nav__item').find('.main-nav__sub-list');
-  //   $('.main-nav__sub-list').not(currentSublist).slideUp();
-  //   currentSublist.slideToggle();
-  // });
 }
 
 // галерея фото
@@ -158,4 +150,32 @@ function closeModal(element) {
 
   overlay.classList.remove('active');
   body.classList.remove('noscroll');
+}
+
+// показ фонового видео для устройств, находящихся в режиме энергосбережения
+// отслеживаем - воспроизводится ли видео или нет
+Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+  get: function () {
+    return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+  }
+});
+// если устройство в режиме э/с -> сработает событие suspend
+
+let videoElement = body.querySelector('#main-video');
+if (videoElement) {
+  body.addEventListener('touchstart', function() {
+    startVideo();
+  })
+}
+
+function startVideo() {
+  if (videoElement.playing) {
+    // видео уже запущено, ничего не делаем
+    console.log('играем');
+  }
+  else {
+    // видео не запущено, запустить!
+    videoElement.play();
+    console.log('не играем');
+  }
 }
