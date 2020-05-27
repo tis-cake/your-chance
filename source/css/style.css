@@ -697,6 +697,7 @@ input[type="radio"].visually-hidden {
   .services__column--vertical .services__title {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    margin-top: 2px;
     margin-bottom: 1.9rem;
   }
   .services__column--vertical .services__desc {
