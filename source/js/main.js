@@ -104,10 +104,13 @@ for (let i = 0; i < modalExcursionArr.length; i++) {
 }
 
 // кнопка close
-let modalClose = body.querySelector('.modal__close');
-modalClose.addEventListener('click', function() {
-  closeModal();
-})
+let modalCloseBtns = body.querySelectorAll('.modal__close');
+for (let i = 0; i < modalCloseBtns.length; i++) {
+  let closeBtn = modalCloseBtns[i];
+  closeBtn.addEventListener('click', function() {
+    closeModal();
+  })
+}
 
 // нажат esc -> закрыть окно
 window.addEventListener("keydown", function (evt) {
