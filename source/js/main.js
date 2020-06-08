@@ -103,6 +103,17 @@ for (let i = 0; i < modalExcursionArr.length; i++) {
   })
 }
 
+// оставить отзыв (модальное окно 3)
+let modalReview = body.querySelector('.modal--review');
+let modalReviewArr = body.querySelectorAll('.modal-review');
+for (let i = 0; i < modalReviewArr.length; i++) {
+  let currentModal = modalReviewArr[i];
+  currentModal.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    openModal(modalReview, '.modal__textarea');
+  })
+}
+
 // кнопка close
 let modalCloseBtns = body.querySelectorAll('.modal__close');
 for (let i = 0; i < modalCloseBtns.length; i++) {

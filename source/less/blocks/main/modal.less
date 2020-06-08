@@ -20,7 +20,8 @@
 }
 
 .modal--callback.active,
-.modal--excursion.active {
+.modal--excursion.active,
+.modal--review.active {
   display: block;
 }
 
@@ -141,6 +142,28 @@
   }
 }
 
+.modal__textarea {
+  box-sizing: border-box;
+  width: 56%;
+  height: 20rem;
+  margin-bottom: 2rem;
+  padding: 1.9rem;
+
+  border: none;
+  border: 0.3rem solid #67ED81;
+  border-radius: 20px;
+}
+
+.modal--review {
+  .modal__form {
+    flex-direction: column;
+    height: auto;
+  }
+  .modal__btn {
+    height: 6.3rem;
+  }
+}
+
 @media (max-width: @tablet-width) {
   .modal {
     top: 50%;
@@ -199,5 +222,17 @@
     padding: 0;
     text-align: center;
     border: 3px solid @green;
+  }
+
+  .modal__textarea {
+    width: 90%;
+    height: 30rem;
+  }
+
+  .modal--review {
+    .modal__btn {
+      width: 90%;
+      height: 5.5rem;
+    }
   }
 }
