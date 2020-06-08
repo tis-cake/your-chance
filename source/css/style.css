@@ -14,6 +14,13 @@
 }
 @font-face {
   font-display: swap;
+  font-family: 'Myriad Pro';
+  src: local('Myriad Pro Regular'), local('MyriadPro-Regular'), url('../fonts/MyriadPro/regular/MyriadPro-Regular.woff2') format('woff2'), url('../fonts/MyriadPro/regular/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro/regular/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
   font-family: 'Droid';
   src: local('Droid'), local("Droid Regular"), local("Droid-Regular"), url('../fonts/Droid/regular/Droid-Regular.woff2') format('woff2'), url('../fonts/Droid/regular/Droid-Regular.woff') format('woff'), url('../fonts/Droid/regular/Droid-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -2867,16 +2874,20 @@ input[type="radio"].visually-hidden {
   }
 }
 .modal {
+  box-sizing: border-box;
   display: none;
   z-index: 100;
   position: fixed;
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
-  width: 40%;
+  width: 44%;
+  max-width: 845px;
   height: auto;
-  padding: 6rem 2rem;
-  border-radius: 20px;
+  padding-top: 10.6rem;
+  padding-left: 14rem;
+  padding-right: 14rem;
+  padding-bottom: 10.6rem;
   background-color: #ffffff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
 }
@@ -2886,18 +2897,18 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 .modal__title {
-  margin-bottom: 6rem;
-  font-size: 3rem;
-  text-align: center;
+  margin-bottom: 1.6rem;
+  font-size: 8rem;
+  font-family: 'Cinematografica', 'Arial', sans-serif;
 }
 .modal__close {
   position: absolute;
-  top: 1.8rem;
-  right: 3.2rem;
+  top: 1rem;
+  right: 2.6rem;
   display: flex;
   justify-content: center;
-  width: 5rem;
-  height: 5rem;
+  width: 2.2rem;
+  height: 2.2rem;
   padding: 0;
   color: transparent;
   cursor: pointer;
@@ -2936,29 +2947,36 @@ input[type="radio"].visually-hidden {
   align-items: center;
   height: 7.5rem;
   padding: 0.5rem;
+  background-color: #F4F4F4;
+  border-radius: 20px;
 }
+.modal__name,
+.modal__textarea,
 .modal__input-phone,
 .modal__btn {
   box-sizing: border-box;
   padding: 0;
   padding-left: 1.9rem;
   padding-right: 1.9rem;
+  font-family: 'Myriad Pro', 'Arial', sans-serif;
   text-align: left;
   border: none;
   background-color: transparent;
 }
+.modal__name:focus,
+.modal__textarea:focus,
 .modal__input-phone:focus,
 .modal__btn:focus {
   outline: none;
 }
 .modal__input-phone {
-  width: 43.9%;
-  margin-right: 2rem;
+  width: 24.4rem;
   font-size: 2.4rem;
+  padding-right: 0;
 }
 .modal__btn {
   position: relative;
-  width: 56%;
+  width: 31rem;
   height: 100%;
   font-size: 1.8rem;
   color: #161616;
@@ -2975,44 +2993,55 @@ input[type="radio"].visually-hidden {
   transform: translateY(-50%);
   width: 1rem;
   height: 1.7rem;
-  background-image: url('../img/svg/arrow-right-b.svg');
+  background-image: url('../img/svg/arrow-right.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+.modal__name,
 .modal__textarea {
-  box-sizing: border-box;
-  width: 56%;
-  height: 20rem;
-  margin-bottom: 2rem;
-  padding: 1.9rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 2.3rem 2rem;
   border: none;
-  border: 0.3rem solid #67ED81;
   border-radius: 20px;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  background-color: #F4F4F4;
+}
+.modal__textarea {
+  height: 22rem;
+}
+.modal--review {
+  top: 17%;
 }
 .modal--review .modal__form {
   flex-direction: column;
   height: auto;
+  background-color: transparent;
+  padding: 0;
 }
 .modal--review .modal__btn {
-  height: 6.3rem;
+  align-self: flex-start;
+  padding: 2.4rem 1.6rem;
 }
 @media (max-width: 48em) {
   .modal {
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 85%;
+    width: 95%;
     padding: 40px 20px;
     border-radius: 15px;
   }
   .modal__title {
     margin-bottom: 3rem;
+    line-height: 0.8;
   }
   .modal__close {
     top: 1rem;
     right: 10px;
-    width: 4rem;
-    height: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   .modal__close::before,
   .modal__close::after {
@@ -3036,23 +3065,21 @@ input[type="radio"].visually-hidden {
     font-size: 1.8rem;
   }
   .modal__input-phone {
-    width: 50%;
     margin: 0;
     padding: 0;
   }
   .modal__btn {
-    width: 42%;
     padding: 0;
-    text-align: center;
+    padding-left: 20px;
     border: 3px solid #67ED81;
   }
   .modal__textarea {
-    width: 90%;
     height: 30rem;
   }
   .modal--review .modal__btn {
     width: 90%;
     height: 5.5rem;
+    padding: 0;
   }
 }
 

@@ -110,7 +110,7 @@ for (let i = 0; i < modalReviewArr.length; i++) {
   let currentModal = modalReviewArr[i];
   currentModal.addEventListener('click', function(evt) {
     evt.preventDefault();
-    openModal(modalReview, '.modal__textarea');
+    openModal(modalReview, '.modal__name');
   })
 }
 
