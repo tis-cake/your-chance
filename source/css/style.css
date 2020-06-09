@@ -2891,6 +2891,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
 }
+.modal--after.active,
 .modal--callback.active,
 .modal--excursion.active,
 .modal--review.active {
@@ -3025,6 +3026,10 @@ input[type="radio"].visually-hidden {
   align-self: flex-start;
   padding: 2.4rem 1.6rem;
 }
+.modal--after .modal__title {
+  text-align: center;
+  margin-bottom: 0;
+}
 @media (max-width: 48em) {
   .modal {
     top: 50%;
@@ -3082,5 +3087,3 @@ input[type="radio"].visually-hidden {
     padding: 0;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

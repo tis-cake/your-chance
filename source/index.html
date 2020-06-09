@@ -549,9 +549,17 @@
         <p class="modal__title">Оставить отзыв</p>
         <button class="modal__close">Закрыть окно</button>
         <form class="modal__form" action="/echo" method="post">
+          <input class="modal__name" type="text" name="name" placeholder="Ваше имя" required>
           <textarea class="modal__textarea" name="" id="" placeholder="Ваш отзыв" required></textarea>
           <button class="modal__btn">Отправить</button>
         </form>
+      </div>
+    </section>
+
+    <section class="modal modal--after">
+      <div class="modal-wrapper">
+        <p class="modal__title">Спасибо!</p>
+        <button class="modal__close">Закрыть окно</button>
       </div>
     </section>
 
