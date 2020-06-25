@@ -150,6 +150,23 @@
   display: none;
 }
 
+.list--list-style-none {
+  li {
+    padding-left: 0;
+
+    span {
+      margin-left: auto;
+      color: #777777;
+    }
+  }
+
+  ul li {
+    &::before {
+      content: none;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .tab .list__more-wrap:hover .list__more-block.focus,
   .list__more-wrap:hover .list__more-block,

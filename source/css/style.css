@@ -1257,7 +1257,8 @@ input[type="radio"].visually-hidden {
 }
 .article {
   counter-reset: list-item;
-  margin-bottom: 19.3rem;
+  margin-top: 6rem;
+  margin-bottom: 12rem;
 }
 .article__title {
   margin-bottom: 5.5rem;
@@ -1815,6 +1816,16 @@ input[type="radio"].visually-hidden {
 }
 .list__more-close {
   display: none;
+}
+.list--list-style-none li {
+  padding-left: 0;
+}
+.list--list-style-none li span {
+  margin-left: auto;
+  color: #777777;
+}
+.list--list-style-none ul li::before {
+  content: none;
 }
 @media (min-width: 48em) {
   .tab .list__more-wrap:hover .list__more-block.focus,
