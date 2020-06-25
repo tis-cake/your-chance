@@ -1496,6 +1496,10 @@ input[type="radio"].visually-hidden {
   font-size: 7.5rem;
   text-align: left;
 }
+.about-contacts .about__link-mail {
+  color: #2C2C2C;
+  font-size: 2rem;
+}
 @media (max-width: 48em) {
   .about {
     margin-top: 4.5rem;
@@ -1558,6 +1562,9 @@ input[type="radio"].visually-hidden {
   .about-contacts .about__title {
     font-size: 6rem;
     line-height: 6rem;
+  }
+  .about-contacts .about__link-mail {
+    margin-bottom: 2.4rem;
   }
 }
 @media (max-width: 24em) {
