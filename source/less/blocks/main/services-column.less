@@ -4,10 +4,15 @@
 
 .services-column__item {
   margin-bottom: 8.8rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .services-column__link {}
 
+.banner-1,
+.banner-3,
 .services-column__desc-wrap {
   box-sizing: border-box;
   padding: 3.6rem 4rem 3.6rem 2.2rem;
@@ -16,16 +21,29 @@
   line-height: 2.3rem;
   background-color: @green;
 
-  &--red {
+  // &--red {
+  //   padding-right: 2.2rem;
+  //   background-color: @red;
+  // }
+
+  // &--dark {
+  //   padding-right: 5.5rem;
+  //   color: #fff;
+  //   background-color: #474747;
+  // }
+}
+
+.banner-2,
+.services-column__desc-wrap--red {
     padding-right: 2.2rem;
     background-color: @red;
-  }
+}
 
-  &--dark {
-    padding-right: 5.5rem;
-    color: #fff;
-    background-color: #474747;
-  }
+.banner-4,
+.services-column__desc-wrap--dark {
+  padding-right: 5.5rem;
+  color: #fff;
+  background-color: #474747;
 }
 
 .services-column__title {
@@ -54,6 +72,8 @@
     margin-bottom: 6.5rem;
   }
 
+  .banner-1,
+  .banner-3,
   .services-column__desc-wrap {
     margin-bottom: 0;
     padding: 2.1rem 6rem 2.2rem 3rem;

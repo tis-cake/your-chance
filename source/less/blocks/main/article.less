@@ -65,7 +65,9 @@
   // width: 40.5rem;
   width: 32.6rem;
 
+  .article__column-title,
   h3 {
+    display: inline-block;
     margin-bottom: 2.5rem;
 
     font-size: 3rem;
@@ -76,10 +78,14 @@
     font-size: 1.6rem;
     line-height: 2.9rem;
   }
+
+  &>p:last-of-type {
+    margin-bottom: 9rem;
+  }
 }
 
 .article__services-column {
-  margin-top: 90px;
+  // margin-top: 9rem;
 }
 
 .article-number {
@@ -96,10 +102,16 @@
   }
   .article__column-right {
     width: 40.5rem;
+    .article__column-title,
     h3 {
       margin-bottom: 5rem;
     }
   }
+}
+
+.article .banner-green {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 @media (max-width: @tablet-width) {
@@ -153,6 +165,7 @@
 
     width: auto;
     margin-bottom: 3.4rem;
+    .article__column-title,
     h3 {
       // max-width: 27.6rem;
       margin-bottom: 2rem;
@@ -201,6 +214,7 @@
     .article__column-right {
       display: block;
       width: auto;
+      .article__column-title,
       h3 {
         margin-bottom: 2rem;
       }
