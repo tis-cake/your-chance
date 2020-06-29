@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="«Твой шанс»">
+    <title>Твой шанс</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">
+
+    <link rel="preload" href="fonts/Circe/regular/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/lightgallery.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+
+          <button class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+
+          <a class="header__logo logo" href="index.html">
+            <img class="logo__img-wrap" src="img/logo/logo.png" alt="Логотип портала «Твой шанс»">
+            <p class="logo__title">Твой шанс</p>
+          </a>
+
+          <a class="header__link-call-back modal-callback" href="#">
+            <img class="header__link-call-back-img" src="img/svg/call-w.svg" alt="Обратный звонок">
+          </a>
+
+          <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Реабилитация в центре</a>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link main-nav-sub">Лечение наркомании</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Детоксикация в клинике</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Лечение подростков</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение солевой наркомании</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Героиновая наркомания</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">ВИП лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Снятие ломки</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение спайсовой наркомании</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">УБОД</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Амбулаторное лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Работа с психологом</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link main-nav-sub">Лечение алкоголизма</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Детоксикация в клинике</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение подростков</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">ВИП лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Вызов нарколога</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Женский алкоголизм</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Пивной алкоголизм</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Вывод из запоя</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Амбулаторное лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Работа с психологом</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Кодирование</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link main-nav-sub">Игромания</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Лечение подростков</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">ВИП лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Амбулаторное лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Работа с психологом</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Онлайн игры</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Казино</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение игровой наркомании</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Ставки на спорт</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav-sub" href="about.html">О центре</a>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="reviews.html">Отзывы</a>
+                  </li>
+                  <li class="main-nav__subitem mobile-block">
+                    <a class="main-nav__sublink" href="about.html">О центре</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="masters.html">Специалисты</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__phone-wrapper">
+            <a class="header__phone-link" href="tel:+79678000022">+7(967) 800 00 22</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <article class="banner-dark banner-dark-database">
+        <div class="banner-dark__content-wrap">
+          <p class="banner-dark__title">Наши <span class="banner-dark__title-img"></span> публикации</p>
+          <p class="banner-dark__sub-title">Собрание публикаций для зависимых и их родственников</p>
+          <p class="banner-dark__desc">Рекомендуемый срок реабилитации: <span class="banner-dark__desc-item">от 3х до 6 месяцев</span></p>
+          <a href="#" class="modal-callback link link--white banner-dark__link">Заявка на лечение</a>
+        </div>
+      </article>
+
+      <div class="articles-block-list">
+        <section class="topics-switch container">
+          <p class="visually-hidden">Выбор темы</p>
+
+          <ul class="topics-switch__list">
+            <li class="topics-switch__item">
+              <a class="topics-switch__link active" href="#">
+                All
+              </a>
+            </li>
+            <li class="topics-switch__item">
+              <a class="topics-switch__link" href="#">
+                Drugs
+              </a>
+            </li>
+            <li class="topics-switch__item">
+              <a class="topics-switch__link" href="#">
+                Alcoholism
+              </a>
+            </li>
+            <li class="topics-switch__item">
+              <a class="topics-switch__link" href="#">
+                Gambling
+              </a>
+            </li>
+            <li class="topics-switch__item">
+              <a class="topics-switch__link" href="#">
+                Relatives
+              </a>
+            </li>
+            <li class="topics-switch__item">
+              <a class="topics-switch__link" href="#">
+                International Rehabilitation
+              </a>
+            </li>
+            <li class="topics-switch__item">
+              <a class="topics-switch__link" href="#">
+                Question and Answer
+              </a>
+            </li>
+            <li class="topics-switch__item">
+              <a class="topics-switch__link" href="#">
+                + 10 topics
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="articles-block">
+          <div class="container">
+            <div class="articles-block__title-wrap">
+              <p class="articles-block__main-title">
+                Солевая зависимость
+              </p>
+              <a class="articles-block__main-link" href="#">
+                Все статьи по теме
+              </a>
+            </div>
+
+            <div class="articles-block__swiper swiper">
+              <div class="swiper-container swiper__container" id="articles-swiper-1">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-scrollbar swiper__scrollbar articles-block__scrollbar"></div>
+              </div>
+              <div class="swiper__button swiper__button-next articles-block__button-next"></div>
+              <div class="swiper__button swiper__button-prev articles-block__button-prev"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="articles-block">
+          <div class="container">
+            <div class="articles-block__title-wrap">
+              <p class="articles-block__main-title">
+                Алкоголизм
+              </p>
+              <a class="articles-block__main-link" href="#">
+                Все статьи по теме
+              </a>
+            </div>
+
+            <div class="articles-block__swiper swiper">
+              <div class="swiper-container swiper__container" id="articles-swiper-2">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-scrollbar swiper__scrollbar articles-block__scrollbar"></div>
+              </div>
+              <div class="swiper__button swiper__button-next articles-block__button-next"></div>
+              <div class="swiper__button swiper__button-prev articles-block__button-prev"></div>
+            </div>
+          </div>
+        </section>
+
+        <article class="articles-block__banner-green banner-green">
+          <div class="banner-green__content-wrap">
+            <p class="banner-green__sub-title">Анонимная бесплатная помощь 24/7.</p>
+            <p class="banner-green__title">Консультации до двух часов</p>
+
+            <p class="banner-green__desc">Наша команда сможет погрузиться в вашу проблему на глубоком уровне! <span class="banner-green__desc--desc-block">И обязательно предложит варианты решения проблемы.</span></p>
+
+            <p class="banner-green__main-title banner-green__main-title--fz200">Составим программу лечения <br> бесплатно</p>
+          </div>
+        </article>
+
+        <section class="articles-block">
+          <div class="container">
+            <div class="articles-block__title-wrap">
+              <p class="articles-block__main-title">
+                Солевая зависимость
+              </p>
+              <a class="articles-block__main-link" href="#">
+                Все статьи по теме
+              </a>
+            </div>
+
+            <div class="articles-block__swiper swiper">
+              <div class="swiper-container swiper__container" id="articles-swiper-2">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-scrollbar swiper__scrollbar articles-block__scrollbar"></div>
+              </div>
+              <div class="swiper__button swiper__button-next articles-block__button-next"></div>
+              <div class="swiper__button swiper__button-prev articles-block__button-prev"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="articles-block">
+          <div class="container">
+            <div class="articles-block__title-wrap">
+              <p class="articles-block__main-title">
+                Алкоголизм
+              </p>
+              <a class="articles-block__main-link" href="#">
+                Все статьи по теме
+              </a>
+            </div>
+
+            <div class="articles-block__swiper swiper">
+              <div class="swiper-container swiper__container" id="articles-swiper-4">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide articles-block__item">
+                    <div class="articles-block__img-wrap">
+                      <img class="articles-block__img" src="img/articles-block/1.png" alt="">
+                    </div>
+                    <p class="articles-block__title">
+                      The Dying California Desert Town Where Cannabis Is the Only Remaining Hope
+                    </p>
+                    <p class="articles-block__desc">
+                      From cul-de-sac-fever-dream gone bust to vertically integrated weed opportunity zone, the high desert town of California City is hoping the winds of fate will finally blow its way
+                    </p>
+                    <div class="articles-block__theme-detail-wrap">
+                      <p class="articles-block__theme-detail-title">
+                        Alcoholism
+                      </p>
+                      <time class="articles-block__theme-detail-date" datetime="2020-01-22">
+                        22.01.20
+                      </time>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-scrollbar swiper__scrollbar articles-block__scrollbar"></div>
+              </div>
+              <div class="swiper__button swiper__button-next articles-block__button-next"></div>
+              <div class="swiper__button swiper__button-prev articles-block__button-prev"></div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__columns-wrap">
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">ИНФОРМАЦИЯ</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">О центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Специалисты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">Лечение наркомании</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Детоксикация в клинике</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение подростков</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение солевой наркомании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Героиновая наркомания</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">ВИП лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Снятие ломки</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение спайсовой наркомании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Программы лечения</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">УБОД</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Амбулаторное лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Работа с психологом</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">Лечение алкоголизма</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Детоксикация в клинике</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение подростков</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">ВИП лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вызов нарколога</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Женский алкоголизм</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Пивной алкоголизм</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Программы лечения</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вывод из запоя</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Амбулаторное лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Работа с психологом</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Кодирование</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">Лечение игромании</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение подростков</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">ВИП лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Программы лечения</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Амбулаторное лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Работа с психологом</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Онлайн игры</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Казино</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение игровой наркомании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Ставки на спорт</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom-link-wrap">
+          <a class="footer__logo logo" href="index.html">
+            <img class="logo__img-wrap" src="img/logo/logo.png" alt="Логотип портала «Твой шанс»">
+            <p class="logo__title">Твой шанс</p>
+          </a>
+          <div class="footer__phone-wrapper">
+            <p class="footer__phone-locate">Москвоская область, г. Одинцово</p>
+            <a class="footer__phone-link" href="tel:+79678000022">+7(967) 800 00 22</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal modal--callback">
+      <div class="modal-wrapper">
+        <p class="modal__title">Введите ваш номер телефона</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 ( ___ ) ___ __ - __" required>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="modal modal--excursion">
+      <div class="modal-wrapper">
+        <p class="modal__title">Заявка на экскурсию в центр</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 ( ___ ) ___ __ - __" required>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="modal modal--review">
+      <div class="modal-wrapper">
+        <p class="modal__title">Оставить отзыв</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <textarea class="modal__textarea" name="" id="" placeholder="Ваш отзыв" required></textarea>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="overlay"></div>
+
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/inputmask.min.js"></script>
+    <script src="js/libs/lightgallery/lightgallery.min.js"></script>
+    <script src="js/libs/lightgallery/lg-zoom.min.js"></script>
+
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/polyfills/objectFitPolyfill.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>
