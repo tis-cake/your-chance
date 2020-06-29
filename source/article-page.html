@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="«Твой шанс»">
+    <title>Твой шанс</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">
+
+    <link rel="preload" href="fonts/Circe/regular/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/lightgallery.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+
+          <button class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+
+          <a class="header__logo logo" href="index.html">
+            <img class="logo__img-wrap" src="img/logo/logo.png" alt="Логотип портала «Твой шанс»">
+            <p class="logo__title">Твой шанс</p>
+          </a>
+
+          <a class="header__link-call-back modal-callback" href="#">
+            <img class="header__link-call-back-img" src="img/svg/call-w.svg" alt="Обратный звонок">
+          </a>
+
+          <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Реабилитация в центре</a>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link main-nav-sub">Лечение наркомании</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Детоксикация в клинике</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Лечение подростков</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение солевой наркомании</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Героиновая наркомания</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">ВИП лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Снятие ломки</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение спайсовой наркомании</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">УБОД</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Амбулаторное лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Работа с психологом</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link main-nav-sub">Лечение алкоголизма</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Детоксикация в клинике</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение подростков</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">ВИП лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Вызов нарколога</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Женский алкоголизм</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Пивной алкоголизм</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Вывод из запоя</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Амбулаторное лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Работа с психологом</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Кодирование</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link main-nav-sub">Игромания</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Лечение подростков</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">ВИП лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Амбулаторное лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Работа с психологом</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Онлайн игры</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Казино</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение игровой наркомании</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Ставки на спорт</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav-sub" href="about.html">О центре</a>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="reviews.html">Отзывы</a>
+                  </li>
+                  <li class="main-nav__subitem mobile-block">
+                    <a class="main-nav__sublink" href="about.html">О центре</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="masters.html">Специалисты</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__phone-wrapper">
+            <a class="header__phone-link" href="tel:+79678000022">+7(967) 800 00 22</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="breadcrumbs container">
+        <ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="/" class="breadcrumbs__link">
+              <span itemprop="name">Главная</span>
+            </a>
+            <meta itemprop="position" content="1">
+          </li>
+
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="#" class="breadcrumbs__link">
+              <span itemprop="name">Наши специалисты</span>
+            </a>
+            <meta itemprop="position" content="2">
+          </li>
+
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="#" class="breadcrumbs-item breadcrumbs-item-current">
+              <span itemprop="name">
+                Тихонова Светлана Сергеевна
+              </span>
+            </a>
+            <meta itemprop="position" content="3">
+          </li>
+        </ul>
+      </div>
+
+      <section class="topics-switch topics-switch-article-detail container">
+        <p class="visually-hidden">Выбор темы</p>
+
+        <ul class="topics-switch__list">
+          <li class="topics-switch__item">
+            <a class="topics-switch__link" href="#">
+              All
+            </a>
+          </li>
+          <li class="topics-switch__item">
+            <a class="topics-switch__link" href="#">
+              Drugs
+            </a>
+          </li>
+          <li class="topics-switch__item">
+            <a class="topics-switch__link" href="#">
+              Alcoholism
+            </a>
+          </li>
+          <li class="topics-switch__item">
+            <a class="topics-switch__link" href="#">
+              Gambling
+            </a>
+          </li>
+          <li class="topics-switch__item">
+            <a class="topics-switch__link" href="#">
+              Relatives
+            </a>
+          </li>
+          <li class="topics-switch__item">
+            <a class="topics-switch__link" href="#">
+              International Rehabilitation
+            </a>
+          </li>
+          <li class="topics-switch__item">
+            <a class="topics-switch__link" href="#">
+              Question and Answer
+            </a>
+          </li>
+          <li class="topics-switch__item">
+            <a class="topics-switch__link" href="#">
+              + 10 topics
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="article-detail article container">
+        <div class="article-detail__top-wrap">
+          <span class="article-detail__strong">
+            01.02.2020
+          </span>
+          <time class="article-detail__date" datetime="2019-06-26">
+            Опубликовано: 2019-06-26
+          </time>
+
+          <div class="article-detail__rating article-rating">
+            <p class="article-rating__title">
+              Оценить:
+            </p>
+            <div class="article-rating__area">
+
+              <input type="radio" id="star-5" name="rating" value="5">
+              <label for="star-5" title="Оценка «5»"></label>
+
+              <input type="radio" id="star-4" name="rating" value="4">
+              <label for="star-4" title="Оценка «4»"></label>
+
+              <input type="radio" id="star-3" name="rating" value="3">
+              <label for="star-3" title="Оценка «3»"></label>
+
+              <input type="radio" id="star-2" name="rating" value="2">
+              <label for="star-2" title="Оценка «2»"></label>
+
+              <input type="radio" id="star-1" name="rating" value="1">
+              <label for="star-1" title="Оценка «1»"></label>
+            </div>
+          </div>
+        </div>
+
+        <h1>The Truth About Ecstasy: High Society</h1>
+        <p class="article-detail__intro">
+          British people statistically take more MDMA in one session thah any other country on the planet. And not just a little bit more: on average, Brits take 420 milligrams per session.
+        </p>
+        <span class="article-detail__tag">
+          Psychedelics
+        </span>
+
+        <div class="article-detail__social-panel social-panel">
+          <div class="social-panel__wrap">
+
+            <div class="social-panel__views">
+              <p class="social-panel__desc">
+                <span class="visually-hidden">Просмотров:</span>
+                <span class="social-panel__views-count">2536</span>
+              </p>
+            </div>
+            <div class="social-panel__share">
+              <p class="social-panel__desc">Поделиться:</p>
+              <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+              <script src="https://yastatic.net/share2/share.js"></script>
+              <ul class="social-panel__btn-list">
+                <li class="social-panel__btn-item">
+                  <div class="ya-share2" data-services="vkontakte"></div>
+                </li>
+                <li class="social-panel__btn-item">
+                  <div class="ya-share2" data-services="facebook"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <ol class="article__sections-list">
+          <li class="article__sections-title">
+            <a class="article__link" href="#section1"><span class="article__secions-title-text">Побочные эффекты и осложнения булимии</span></a>
+            <ul class="article__sections-sublist">
+              <li class="article__sections-subtitle"><a class="article__sublink" href="#section1-1">Детоксикация</a></li>
+              <li class="article__sections-subtitle"><a class="article__sublink" href="#section1-2">Использование антидотов</a></li>
+              <li class="article__sections-subtitle"><a class="article__sublink" href="#section1-3">Лечение вегетативных и психических расстройств</a>
+                <!-- <ul class="article__sections-sublist">
+                  <li class="article__sections-subitem"><a class="article__sublink" href="#section1-3-1">Адреномиметики</a></li>
+                  <li class="article__sections-subitem"><a class="article__sublink" href="#section1-3-2">Седативные средства</a></li>
+                  <li class="article__sections-subitem"><a class="article__sublink" href="#section1-3-3">УБОД</a></li>
+                </ul> -->
+              </li>
+            </ul>
+          </li>
+          <li class="article__sections-title">
+            <a class="article__link" href="#section2"><span class="article__secions-title-text">Профилактика обострений</span></a>
+          </li>
+          <li class="article__sections-title">
+            <a class="article__link" href="#section4"><span class="article__secions-title-text">Заключение</span></a>
+          </li>
+        </ol>
+
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__columns-wrap">
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">ИНФОРМАЦИЯ</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">О центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Специалисты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">Лечение наркомании</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Детоксикация в клинике</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение подростков</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение солевой наркомании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Героиновая наркомания</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">ВИП лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Снятие ломки</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение спайсовой наркомании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Программы лечения</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">УБОД</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Амбулаторное лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Работа с психологом</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">Лечение алкоголизма</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Детоксикация в клинике</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение подростков</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">ВИП лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вызов нарколога</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Женский алкоголизм</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Пивной алкоголизм</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Программы лечения</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вывод из запоя</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Амбулаторное лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Работа с психологом</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Кодирование</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">Лечение игромании</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение подростков</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">ВИП лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Программы лечения</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Амбулаторное лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Работа с психологом</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Онлайн игры</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Казино</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение игровой наркомании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Ставки на спорт</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom-link-wrap">
+          <a class="footer__logo logo" href="index.html">
+            <img class="logo__img-wrap" src="img/logo/logo.png" alt="Логотип портала «Твой шанс»">
+            <p class="logo__title">Твой шанс</p>
+          </a>
+          <div class="footer__phone-wrapper">
+            <p class="footer__phone-locate">Москвоская область, г. Одинцово</p>
+            <a class="footer__phone-link" href="tel:+79678000022">+7(967) 800 00 22</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal modal--callback">
+      <div class="modal-wrapper">
+        <p class="modal__title">Введите ваш номер телефона</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 ( ___ ) ___ __ - __" required>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="modal modal--excursion">
+      <div class="modal-wrapper">
+        <p class="modal__title">Заявка на экскурсию в центр</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 ( ___ ) ___ __ - __" required>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="modal modal--review">
+      <div class="modal-wrapper">
+        <p class="modal__title">Оставить отзыв</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <textarea class="modal__textarea" name="" id="" placeholder="Ваш отзыв" required></textarea>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="overlay"></div>
+
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/inputmask.min.js"></script>
+    <script src="js/libs/lightgallery/lightgallery.min.js"></script>
+    <script src="js/libs/lightgallery/lg-zoom.min.js"></script>
+
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/polyfills/objectFitPolyfill.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>
