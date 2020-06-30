@@ -367,8 +367,9 @@ input[type="radio"].visually-hidden {
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    position: relative;
     z-index: 10;
+    position: fixed;
+    top: 0;
   }
   .header.active .header__wrapper {
     flex-wrap: wrap;
@@ -471,6 +472,7 @@ input[type="radio"].visually-hidden {
   .main-nav__list {
     flex-direction: column;
     font-size: 20px;
+    margin-bottom: 7rem;
   }
   .main-nav__item {
     position: relative;
@@ -1542,7 +1544,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 47rem;
+  width: 49rem;
 }
 .about__features-list {
   display: flex;
