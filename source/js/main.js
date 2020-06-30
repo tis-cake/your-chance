@@ -193,3 +193,27 @@ function startVideo() {
     console.log('не играем');
   }
 }
+
+// форма комментариев
+let commentsReplyBtnArr = body.querySelectorAll('.comments__reply-btn');
+
+commentsReplyBtnArr.forEach(function (el) {
+  el.addEventListener('click', function() {
+    el.classList.add('hidden');
+
+    let currentBlock = el.closest('.comments__block');
+    let currentForm = currentBlock.querySelector('.comments__reply-form');
+    let currentSubmit = currentForm.querySelector('.comments__btn');
+
+    currentForm.classList.add('active');
+    currentForm.querySelector('.comments__form-name').focus();
+
+    // как пример
+    currentSubmit.addEventListener('click', function() {
+      currentForm.classList.remove('active');
+      let currentAnswerBlock = currentBlock.querySelector('.comments__answer-block');
+      currentAnswerBlock.classList.add('active');
+    })
+
+  })
+})
