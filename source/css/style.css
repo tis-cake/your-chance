@@ -218,6 +218,10 @@ input[type="radio"].visually-hidden {
 .link--white {
   color: #fff;
 }
+.ytp-title-channel-logo {
+  display: none!important;
+  visibility: hidden!important;
+}
 @media (max-width: 48em) {
   .container,
   .container-outside,
@@ -1447,39 +1451,6 @@ input[type="radio"].visually-hidden {
   margin-top: 7rem;
   margin-bottom: 7rem;
 }
-/* оглавление на детальной статьи */
-.article__sections-list {
-  margin-bottom: 3.2rem;
-}
-.article__sections-list a {
-  text-decoration: underline;
-}
-.article__sections-title {
-  margin-bottom: 0.6rem;
-}
-.article__sections-subtitle {
-  margin-bottom: 0.6rem;
-  font-weight: 400;
-  color: inherit;
-}
-.article__sections-subtitle:last-child {
-  margin-bottom: 0;
-}
-.article__sublink {
-  font-weight: 300;
-  color: inherit;
-}
-.article__sections-sublist {
-  padding-top: 0.6rem;
-  padding-left: 1.2rem;
-}
-.article__sections-subitem {
-  padding-bottom: 0.6rem;
-  padding-left: 1.6rem;
-}
-.article__sections-subitem:last-child {
-  padding-bottom: 0;
-}
 @media (max-width: 48em) {
   .article {
     margin-top: 4rem;
@@ -1576,7 +1547,7 @@ input[type="radio"].visually-hidden {
 .about__features-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.2rem;
   font-family: 'Cinematografica', 'Arial', sans-serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -1607,9 +1578,6 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   font-family: 'Cinematografica', 'Arial', sans-serif;
   line-height: 7.5rem;
-  position: relative;
-  left: -15.5rem;
-  width: 62.5rem;
   font-size: 9.5rem;
   text-align: right;
 }
@@ -1636,12 +1604,7 @@ input[type="radio"].visually-hidden {
 .about__swiper {
   margin-top: 6.5rem;
 }
-.about-contacts .about__features-list {
-  margin-bottom: 1.2rem;
-}
 .about-contacts .about__title {
-  position: static;
-  width: auto;
   font-size: 7.5rem;
   text-align: left;
 }
@@ -1673,9 +1636,6 @@ input[type="radio"].visually-hidden {
     margin-bottom: 0;
   }
   .about__title {
-    position: static;
-    left: 0;
-    width: auto;
     margin-bottom: 2.4rem;
     font-size: 6rem;
     line-height: 6rem;
@@ -1698,9 +1658,6 @@ input[type="radio"].visually-hidden {
   }
   .about-contacts {
     padding-bottom: 0rem;
-  }
-  .about-contacts .about__features-list {
-    margin-bottom: 0;
   }
   .about-contacts .about__feature-item:first-child {
     display: none;
@@ -3196,6 +3153,42 @@ input[type="radio"].visually-hidden {
   margin-top: 3.2rem;
   margin-bottom: 3.5rem;
 }
+.article-detail__contents-list {
+  /*__sections-list*/
+  /*__sections-title*/
+  /*__sections-sublist*/
+  /*__sections-subtitle*/
+  /*__sections-sublink*/
+}
+.article-detail__contents-list > ol {
+  margin-bottom: 3.2rem;
+}
+.article-detail__contents-list > ol a {
+  text-decoration: underline;
+}
+.article-detail__contents-list > ol > li {
+  margin-bottom: 0.6rem;
+}
+.article-detail__contents-list ol ul,
+.article-detail__contents-list ol ol {
+  padding-top: 0.6rem;
+  padding-left: 1.2rem;
+}
+.article-detail__contents-list ol ul li,
+.article-detail__contents-list ol ol li {
+  margin-bottom: 0.6rem;
+  font-weight: 400;
+  color: inherit;
+}
+.article-detail__contents-list ol ul li:last-child,
+.article-detail__contents-list ol ol li:last-child {
+  margin-bottom: 0;
+}
+.article-detail__contents-list ol ul a,
+.article-detail__contents-list ol ol a {
+  font-weight: 300;
+  color: inherit;
+}
 .article-detail__double-column-wrap {
   display: flex;
   justify-content: space-between;
@@ -3532,6 +3525,7 @@ ul.article-detail__reviewer-list {
   align-self: center;
   height: 5.5rem;
   background-color: inherit;
+  resize: none;
 }
 .comments__form-text::-webkit-input-placeholder {
   line-height: 5.5rem;
