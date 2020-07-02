@@ -74,21 +74,38 @@
   width: 27%;
 }
 
-.modal-sections-tab__list {
-  &-hidden {
-    display: none;
+// .modal-sections-tab__list {
+//   &-hidden {
+//     display: none;
 
-    /* если списком */
-    position: absolute;
-    top: 0;
-    left: 50.3rem;
-    width: 74%;
-    &.overflow {
-      overflow-y: scroll;
-      max-height: 59rem;
-    }
-    /**/
+//     /* если списком */
+//     position: absolute;
+//     top: 0;
+//     left: 50.3rem;
+//     width: 74%;
+//     &.overflow {
+//       overflow-y: scroll;
+//       max-height: 59rem;
+//     }
+//     /**/
+//   }
+//   &.active {
+//     display: block;
+//   }
+// }
+
+.modal-sections-tab__sub-list {
+  display: none;
+  /* если списком */
+  position: absolute;
+  top: 0;
+  left: 50.3rem;
+  width: 74%;
+  &.overflow {
+    overflow-y: scroll;
+    max-height: 59rem;
   }
+  /**/
   &.active {
     display: block;
   }
@@ -96,11 +113,19 @@
 
 .modal-sections-tab__item {
   margin-bottom: 2.1rem;
+
+  button:focus {
+    outline: none;
+    color: #7F9DBF;
+  }
+}
+
+.modal-sections-tab__toggle-btn {
+  color: inherit;
 }
 
 .modal-sections-tab__link {
   color: inherit;
-  &-page,
   &-all {
     color: inherit;
   }
@@ -122,17 +147,23 @@
   .modal-sections-tab__close {
     right: -1.7rem;
   }
-  .modal-sections-tab__list {
-    &-hidden {
-      width: 70%;
-    }
+  // .modal-sections-tab__list {
+  //   &-hidden {
+  //     width: 70%;
+  //   }
+  // }
+  .modal-sections-tab__sub-list {
+    width: 70%;
   }
 }
 
 @media (max-width: 900px) {
-  .modal-sections-tab__list {
-    &-hidden {
-      width: 65%;
-    }
+  // .modal-sections-tab__list {
+  //   &-hidden {
+  //     width: 65%;
+  //   }
+  // }
+  .modal-sections-tab__sub-list {
+    width: 65%;
   }
 }

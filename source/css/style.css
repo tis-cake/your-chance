@@ -126,6 +126,7 @@ p {
 }
 button {
   cursor: pointer;
+  font-family: inherit;
 }
 input,
 button {
@@ -4224,7 +4225,7 @@ ul.article-detail__reviewer-list {
   /* width: 47%; */
   width: 27%;
 }
-.modal-sections-tab__list-hidden {
+.modal-sections-tab__sub-list {
   display: none;
   /* если списком */
   position: absolute;
@@ -4233,20 +4234,26 @@ ul.article-detail__reviewer-list {
   width: 74%;
   /**/
 }
-.modal-sections-tab__list-hidden.overflow {
+.modal-sections-tab__sub-list.overflow {
   overflow-y: scroll;
   max-height: 59rem;
 }
-.modal-sections-tab__list.active {
+.modal-sections-tab__sub-list.active {
   display: block;
 }
 .modal-sections-tab__item {
   margin-bottom: 2.1rem;
 }
+.modal-sections-tab__item button:focus {
+  outline: none;
+  color: #7F9DBF;
+}
+.modal-sections-tab__toggle-btn {
+  color: inherit;
+}
 .modal-sections-tab__link {
   color: inherit;
 }
-.modal-sections-tab__link-page,
 .modal-sections-tab__link-all {
   color: inherit;
 }
@@ -4265,12 +4272,12 @@ ul.article-detail__reviewer-list {
   .modal-sections-tab__close {
     right: -1.7rem;
   }
-  .modal-sections-tab__list-hidden {
+  .modal-sections-tab__sub-list {
     width: 70%;
   }
 }
 @media (max-width: 900px) {
-  .modal-sections-tab__list-hidden {
+  .modal-sections-tab__sub-list {
     width: 65%;
   }
 }

@@ -237,16 +237,11 @@ $(document).ready(function() {
   let heightOverflow = 600;
 
   // клик по табам, но не по кнопке "all"
-  $(".modal-sections-tab__link").click(function() {
-    var selectedTab = $(this).attr("href");
+  $(".modal-sections-tab__toggle-btn").click(function() {
+    let selectedTab = $(this).closest('.modal-sections-tab__item').find('.modal-sections-tab__sub-list');
 
-    if($(".modal-sections-tab__link-all").hasClass('active')) {
-      $(".modal-sections-tab__list-hidden").removeClass('active');
-    }
-
-    $(".modal-sections-tab__link").not(this).removeClass('active');
-    $(".modal-sections-tab__link-all").removeClass('active');
-    $(".modal-sections-tab__list-hidden").not(selectedTab).removeClass('active');
+    $(".modal-sections-tab__toggle-btn").not(this).removeClass('active');
+    $(".modal-sections-tab__sub-list").not(selectedTab).removeClass('active');
 
     $(this).toggleClass("active");
     $(selectedTab).toggleClass("active");
@@ -257,24 +252,13 @@ $(document).ready(function() {
     resizeRightColumn(currentHeight);
   });
 
-  // клик по кнопке "all"
-  // $(".modal-sections-tab__link-all").click(function() {
-  //   $(".modal-sections-tab__link").removeClass('active');
-  //   $(".modal-sections-tab__list-hidden").addClass('active');
-  //   $(this).addClass("active");
-
-  //   // при переполнении в правом блоке добавляем скролл
-  //   currentHeight = $('.modal-sections-tab__right').height();
-  //   resizeRightColumn(currentHeight);
-  // })
-
   function resizeRightColumn(height) {
     if (height > heightOverflow) {
       // $('.modal-sections-tab__right').addClass('overflow');
-      $('.modal-sections-tab__list-hidden').addClass('overflow');
+      $('.modal-sections-tab__sub-list').addClass('overflow');
     } else {
       // $('.modal-sections-tab__right').removeClass('overflow');
-      $('.modal-sections-tab__list-hidden').removeClass('overflow');
+      $('.modal-sections-tab__sub-list').removeClass('overflow');
 
     }
   }
