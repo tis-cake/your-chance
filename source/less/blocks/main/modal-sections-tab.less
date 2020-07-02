@@ -113,15 +113,17 @@
 
 .modal-sections-tab__item {
   margin-bottom: 2.1rem;
-
-  button:focus {
-    outline: none;
-    color: #7F9DBF;
-  }
 }
 
 .modal-sections-tab__toggle-btn {
   color: inherit;
+  &.active {
+    color: #7F9DBF;
+  }
+  &:focus {
+    color: #7F9DBF;
+    outline: none;
+  }
 }
 
 .modal-sections-tab__link {
@@ -165,5 +167,70 @@
   // }
   .modal-sections-tab__sub-list {
     width: 65%;
+  }
+}
+
+@media (max-width: @tablet-width) {
+
+  .modal-sections-tab {
+    padding-top: 6.2rem;
+    padding-bottom: 0;
+
+    font-size: 16px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .modal-sections-tab__title {
+    margin-bottom: 4.8rem;
+    font-size: 25px;
+  }
+
+  .modal-sections-tab__close {
+    top: -0.8rem;
+    right: 2rem;
+
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+
+  .modal-sections-tab_wrap {
+    margin-bottom: 20rem;
+  }
+
+  .modal-sections-tab__left {
+    width: 100%;
+  }
+
+  .modal-sections-tab__sub-list {
+    position: static;
+    left: auto;
+    width: 100%;
+    padding-top: 2.6rem;
+    padding-left: 2rem;
+    &.overflow {
+      overflow-y: initial;
+      max-height: initial;
+    }
+  }
+
+  .modal-sections-tab__item {
+    margin-bottom: 2.6rem;
+  }
+
+  .modal-sections-tab__toggle-btn {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    &::after {
+      position: absolute;
+      content: "+";
+      right: 0;
+    }
+    &.active::after {
+      content: "-";
+      color: #7F9DBF;
+    }
   }
 }

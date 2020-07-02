@@ -248,8 +248,11 @@ $(document).ready(function() {
 
     // при переполнении в правом блоке добавляем скролл
     // currentHeight = $('.modal-sections-tab__right').height();
-    currentHeight = $(selectedTab).height();
-    resizeRightColumn(currentHeight);
+
+    if (width > 756) {
+      currentHeight = $(selectedTab).height();
+      resizeRightColumn(currentHeight);
+    }
   });
 
   function resizeRightColumn(height) {
