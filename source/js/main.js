@@ -222,7 +222,7 @@ commentsReplyBtnArr.forEach(function (el) {
 $(document).ready(function() {
 
   // показываем модалку с табами
-  $(".topics-switch__link-all").click(function() {
+  $(".modal-sections").click(function() {
     $(".modal-sections-tab").addClass('active');
     $("body").addClass('noscroll');
   });
@@ -252,28 +252,30 @@ $(document).ready(function() {
     $(selectedTab).toggleClass("active");
 
     // при переполнении в правом блоке добавляем скролл
-    currentHeight = $('.modal-sections-tab__right').height();
+    // currentHeight = $('.modal-sections-tab__right').height();
+    currentHeight = $(selectedTab).height();
     resizeRightColumn(currentHeight);
   });
 
   // клик по кнопке "all"
-  $(".modal-sections-tab__link-all").click(function() {
-    $(".modal-sections-tab__link").removeClass('active');
-    $(".modal-sections-tab__list-hidden").addClass('active');
-    $(this).addClass("active");
+  // $(".modal-sections-tab__link-all").click(function() {
+  //   $(".modal-sections-tab__link").removeClass('active');
+  //   $(".modal-sections-tab__list-hidden").addClass('active');
+  //   $(this).addClass("active");
 
-    // при переполнении в правом блоке добавляем скролл
-    currentHeight = $('.modal-sections-tab__right').height();
-    resizeRightColumn(currentHeight);
-  })
+  //   // при переполнении в правом блоке добавляем скролл
+  //   currentHeight = $('.modal-sections-tab__right').height();
+  //   resizeRightColumn(currentHeight);
+  // })
 
   function resizeRightColumn(height) {
     if (height > heightOverflow) {
-      // $('.modal-sections-tab_wrap').addClass('overflow');
-      $('.modal-sections-tab__right').addClass('overflow');
+      // $('.modal-sections-tab__right').addClass('overflow');
+      $('.modal-sections-tab__list-hidden').addClass('overflow');
     } else {
-      // $('.modal-sections-tab_wrap').removeClass('overflow');
-      $('.modal-sections-tab__right').removeClass('overflow');
+      // $('.modal-sections-tab__right').removeClass('overflow');
+      $('.modal-sections-tab__list-hidden').removeClass('overflow');
+
     }
   }
 });

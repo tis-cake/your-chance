@@ -63,23 +63,31 @@
   display: flex;
   justify-content: space-between;
 
-  &.overflow {
+  // &.overflow {
     // max-height: 59rem;
-  }
+  // }
 }
 
 .modal-sections-tab__left {
-  width: 47%;
+  /* если 2 колонки */
+  /* width: 47%; */
+  width: 27%;
 }
 
 .modal-sections-tab__list {
   &-hidden {
     display: none;
 
-    // position: absolute;
-    // top: 0;
-    // position: relative;
-    // left: 503px;
+    /* если списком */
+    position: absolute;
+    top: 0;
+    left: 50.3rem;
+    width: 74%;
+    &.overflow {
+      overflow-y: scroll;
+      max-height: 59rem;
+    }
+    /**/
   }
   &.active {
     display: block;
@@ -104,12 +112,27 @@
 
 .modal-sections-tab__right {
   width: 100%;
-  // overflow: hidden;
-  // overflow-y: scroll;
-  // max-height: 59rem;
-
   &.overflow {
     overflow-y: scroll;
     max-height: 59rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .modal-sections-tab__close {
+    right: -1.7rem;
+  }
+  .modal-sections-tab__list {
+    &-hidden {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .modal-sections-tab__list {
+    &-hidden {
+      width: 65%;
+    }
   }
 }
