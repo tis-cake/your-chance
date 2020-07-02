@@ -177,7 +177,8 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 .container,
-.container-inside {
+.container-inside,
+.container-outside {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -192,6 +193,9 @@ input[type="radio"].visually-hidden {
 }
 .container-inside--deeper {
   width: 111.4rem;
+}
+.container-outside {
+  width: 157rem;
 }
 .mobile-block {
   display: none;
@@ -1604,13 +1608,25 @@ input[type="radio"].visually-hidden {
 .about__swiper {
   margin-top: 6.5rem;
 }
+.about__link-mail,
+.about__address-wrap {
+  font-size: 2rem;
+}
+.about__address {
+  color: #777;
+}
+.about__address span {
+  color: #2C2C2C;
+}
+.about__link-mail {
+  color: #2C2C2C;
+}
+.about-contacts .about__features-list {
+  margin-bottom: 0;
+}
 .about-contacts .about__title {
   font-size: 7.5rem;
   text-align: left;
-}
-.about-contacts .about__link-mail {
-  color: #2C2C2C;
-  font-size: 2rem;
 }
 @media (max-width: 48em) {
   .about {
@@ -4091,4 +4107,87 @@ ul.article-detail__reviewer-list {
     height: 5.5rem;
     padding: 0;
   }
+}
+.modal-sections-tab {
+  display: none;
+  position: fixed;
+  z-index: 51;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 11.6rem;
+  padding-bottom: 11.6rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: #2C2C2C;
+}
+.modal-sections-tab.active {
+  display: block;
+}
+.modal-sections-tab__title {
+  margin-bottom: 7.7rem;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.modal-sections-tab__close {
+  position: absolute;
+  top: -3.9rem;
+  right: -7.7rem;
+  width: 7.8rem;
+  height: 7.8rem;
+  font-size: 1.2rem;
+  color: transparent;
+}
+.modal-sections-tab__close::before,
+.modal-sections-tab__close::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+}
+.modal-sections-tab__close::before {
+  transform: rotate(45deg);
+}
+.modal-sections-tab__close::after {
+  transform: rotate(-45deg);
+}
+.modal-sections-tab_wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-sections-tab__left {
+  width: 47%;
+}
+.modal-sections-tab__list-hidden {
+  display: none;
+}
+.modal-sections-tab__list.active {
+  display: block;
+}
+.modal-sections-tab__item {
+  margin-bottom: 2.1rem;
+}
+.modal-sections-tab__link {
+  color: inherit;
+}
+.modal-sections-tab__link-page,
+.modal-sections-tab__link-all {
+  color: inherit;
+}
+.modal-sections-tab__link.active,
+.modal-sections-tab__link-all.active {
+  color: #7F9DBF;
+}
+.modal-sections-tab__right {
+  width: 100%;
+}
+.modal-sections-tab__right.overflow {
+  overflow-y: scroll;
+  max-height: 59rem;
 }

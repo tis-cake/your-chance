@@ -1,0 +1,115 @@
+.modal-sections-tab {
+  display: none;
+
+  position: fixed;
+  z-index: 51;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 11.6rem;
+  padding-bottom: 11.6rem;
+
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: @dark-brown;
+
+  &.active {
+    display: block;
+  }
+}
+
+.modal-sections-tab__title {
+  margin-bottom: 7.7rem;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.modal-sections-tab__close {
+  position: absolute;
+  top: -3.9rem;
+  right: -7.7rem;
+
+  width: 7.8rem;
+  height: 7.8rem;
+
+  font-size: 1.2rem;
+  color:transparent;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+
+    width: 100%;
+    height: 0.2rem;
+    background-color: #fff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.modal-sections-tab_wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  &.overflow {
+    // max-height: 59rem;
+  }
+}
+
+.modal-sections-tab__left {
+  width: 47%;
+}
+
+.modal-sections-tab__list {
+  &-hidden {
+    display: none;
+
+    // position: absolute;
+    // top: 0;
+    // position: relative;
+    // left: 503px;
+  }
+  &.active {
+    display: block;
+  }
+}
+
+.modal-sections-tab__item {
+  margin-bottom: 2.1rem;
+}
+
+.modal-sections-tab__link {
+  color: inherit;
+  &-page,
+  &-all {
+    color: inherit;
+  }
+  &.active,
+  &-all.active {
+    color: #7F9DBF;
+  }
+}
+
+.modal-sections-tab__right {
+  width: 100%;
+  // overflow: hidden;
+  // overflow-y: scroll;
+  // max-height: 59rem;
+
+  &.overflow {
+    overflow-y: scroll;
+    max-height: 59rem;
+  }
+}

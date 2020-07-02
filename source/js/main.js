@@ -217,3 +217,63 @@ commentsReplyBtnArr.forEach(function (el) {
 
   })
 })
+
+// табы
+$(document).ready(function() {
+
+  // показываем модалку с табами
+  $(".topics-switch__link-all").click(function() {
+    $(".modal-sections-tab").addClass('active');
+    $("body").addClass('noscroll');
+  });
+
+  // закрываем
+  $(".modal-sections-tab__close").click(function() {
+    $(".modal-sections-tab").removeClass('active');
+    $("body").removeClass('noscroll');
+  });
+
+  let currentHeight;
+  let heightOverflow = 600;
+
+  // клик по табам, но не по кнопке "all"
+  $(".modal-sections-tab__link").click(function() {
+    var selectedTab = $(this).attr("href");
+
+    if($(".modal-sections-tab__link-all").hasClass('active')) {
+      $(".modal-sections-tab__list-hidden").removeClass('active');
+    }
+
+    $(".modal-sections-tab__link").not(this).removeClass('active');
+    $(".modal-sections-tab__link-all").removeClass('active');
+    $(".modal-sections-tab__list-hidden").not(selectedTab).removeClass('active');
+
+    $(this).toggleClass("active");
+    $(selectedTab).toggleClass("active");
+
+    // при переполнении в правом блоке добавляем скролл
+    currentHeight = $('.modal-sections-tab__right').height();
+    resizeRightColumn(currentHeight);
+  });
+
+  // клик по кнопке "all"
+  $(".modal-sections-tab__link-all").click(function() {
+    $(".modal-sections-tab__link").removeClass('active');
+    $(".modal-sections-tab__list-hidden").addClass('active');
+    $(this).addClass("active");
+
+    // при переполнении в правом блоке добавляем скролл
+    currentHeight = $('.modal-sections-tab__right').height();
+    resizeRightColumn(currentHeight);
+  })
+
+  function resizeRightColumn(height) {
+    if (height > heightOverflow) {
+      // $('.modal-sections-tab_wrap').addClass('overflow');
+      $('.modal-sections-tab__right').addClass('overflow');
+    } else {
+      // $('.modal-sections-tab_wrap').removeClass('overflow');
+      $('.modal-sections-tab__right').removeClass('overflow');
+    }
+  }
+});
