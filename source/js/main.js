@@ -207,14 +207,6 @@ commentsReplyBtnArr.forEach(function (el) {
 
     currentForm.classList.add('active');
     currentForm.querySelector('.comments__form-name').focus();
-
-    // как пример
-    currentSubmit.addEventListener('click', function() {
-      currentForm.classList.remove('active');
-      let currentAnswerBlock = currentBlock.querySelector('.comments__answer-block');
-      currentAnswerBlock.classList.add('active');
-    })
-
   })
 })
 
