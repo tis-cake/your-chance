@@ -1,11 +1,16 @@
 .articles-block-list {
-  margin-bottom: 17.2rem;
+  // margin-bottom: 17.2rem;
   padding-top: 6rem;
   &--pb {
     padding-top: 0;
+    margin-bottom: 17.2rem;
     .articles-block {
       padding-bottom: 0;
     }
+  }
+
+  .articles-block__banner-green:last-of-type {
+    margin-bottom: 0;
   }
 }
 
@@ -26,7 +31,9 @@
 }
 
 .articles-block__main-title {
-  font-size: 9.5rem;
+  // font-size: 9.5rem;
+  font-size: 7rem;
+  font-family: @droid;
 }
 .articles-block__main-link {
   align-self: flex-end;
@@ -111,10 +118,11 @@
 @media (max-width: @tablet-width) {
 
   .articles-block-list {
-    margin-bottom: 10rem;
+    // margin-bottom: 10rem;
     padding-top: 4rem;
     &--pb {
       padding-top: 0;
+      margin-bottom: 10rem;
     //   .articles-block {
     //     padding-bottom: 0;
     //   }
