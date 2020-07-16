@@ -1597,7 +1597,6 @@ input[type="radio"].visually-hidden {
   font-family: 'Cinematografica', 'Arial', sans-serif;
   line-height: 7.5rem;
   font-size: 9.5rem;
-  text-align: right;
 }
 .about__links-list {
   display: flex;
@@ -1640,7 +1639,6 @@ input[type="radio"].visually-hidden {
 }
 .about-contacts .about__title {
   font-size: 7.5rem;
-  text-align: left;
 }
 @media (max-width: 48em) {
   .about {
