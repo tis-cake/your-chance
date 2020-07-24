@@ -191,9 +191,9 @@
       </article>
 
       <section class="reviews">
-        <div class="container-inside">
-          <ul class="reviews__list">
-            <li class="reviews__item">
+        <div class="container-inside container-inside--deeper">
+          <div class="reviews__list">
+            <div class="reviews__item">
               <blockquote class="reviews__blockquote">
                 <p class="reviews__datetime-wrap">
                   <time class="reviews__datetime" datetime="ГГ-ММ-ДД">12.01.20</time>
@@ -201,8 +201,9 @@
                 <cite class="reviews__author-name">Алена</cite>
                 <p class="reviews__text">Моя реабилитация длилась 6 месяцев, не скрою , путь был очень тернистый, полон психологических сложностей и переживаний, сопротивлений и неоднократных просьб «мама забери» , реабилитация - это конечно не курорт, но за самые важные ценности в жизни нужно бороться и прикладывать усилия, благодаря центру, моей ценностью стала трезвость и я ценю ее как саму жизнь ! Спасибо всем сотрудникам за поддержку и помощь в пути , за подход и проявленное внимание , спасибо за возврат в здоровую, трезвую и счастливую жизнь !</p>
               </blockquote>
-            </li>
-            <li class="reviews__item">
+            </div>
+
+            <div class="reviews__item">
               <blockquote class="reviews__blockquote">
                 <p class="reviews__datetime-wrap">
                   <time class="reviews__datetime" datetime="ГГ-ММ-ДД">12.01.20</time>
@@ -210,8 +211,9 @@
                 <cite class="reviews__author-name">Алена</cite>
                 <p class="reviews__text">Моя реабилитация длилась 6 месяцев, не скрою , путь был очень тернистый, полон психологических сложностей и переживаний, сопротивлений и неоднократных просьб «мама забери» , реабилитация - это конечно не курорт, но за самые важные ценности в жизни нужно бороться и прикладывать усилия, благодаря центру, моей ценностью стала трезвость и я ценю ее как саму жизнь ! Спасибо всем сотрудникам за поддержку и помощь в пути , за подход и проявленное внимание , спасибо за возврат в здоровую, трезвую и счастливую жизнь !</p>
               </blockquote>
-            </li>
-            <li class="reviews__item">
+            </div>
+
+            <div class="reviews__item">
               <blockquote class="reviews__blockquote">
                 <p class="reviews__datetime-wrap">
                   <time class="reviews__datetime" datetime="ГГ-ММ-ДД">12.01.20</time>
@@ -219,8 +221,46 @@
                 <cite class="reviews__author-name">Алена</cite>
                 <p class="reviews__text">Моя реабилитация длилась 6 месяцев, не скрою , путь был очень тернистый, полон психологических сложностей и переживаний, сопротивлений и неоднократных просьб «мама забери» , реабилитация - это конечно не курорт, но за самые важные ценности в жизни нужно бороться и прикладывать усилия, благодаря центру, моей ценностью стала трезвость и я ценю ее как саму жизнь ! Спасибо всем сотрудникам за поддержку и помощь в пути , за подход и проявленное внимание , спасибо за возврат в здоровую, трезвую и счастливую жизнь !</p>
               </blockquote>
-            </li>
-          </ul>
+            </div>
+
+            <div class="reviews__item">
+              <blockquote class="reviews__blockquote">
+                <p class="reviews__datetime-wrap">
+                  <time class="reviews__datetime" datetime="ГГ-ММ-ДД">12.01.20</time>
+                </p>
+                <cite class="reviews__author-name">Алена</cite>
+              </blockquote>
+              <div class="reviews__swiper swiper">
+                <div class="swiper-container swiper__container" id="swiper">
+                  <div class="swiper-wrapper lightgallery-review">
+                    <a href="img/services/services1.jpg" class="swiper-slide swiper__slide-wrap reviews__slide-wrap">
+                      <img class="swiper__img" src="img/services/services1.jpg" alt="">
+                    </a>
+
+                    <a href="img/services/services2.jpg" class="swiper-slide swiper__slide-wrap reviews__slide-wrap">
+                      <img class="swiper__img" src="img/services/services2.jpg" alt="">
+                    </a>
+
+                    <a href="img/services/services3.jpg" class="swiper-slide swiper__slide-wrap reviews__slide-wrap">
+                      <img class="swiper__img" src="img/services/services3.jpg" alt="">
+                    </a>
+
+                    <a href="img/services/services2.jpg" class="swiper-slide swiper__slide-wrap reviews__slide-wrap">
+                      <img class="swiper__img" src="img/services/services2.jpg" alt="">
+                    </a>
+
+                    <a href="img/services/services1.jpg" class="swiper-slide swiper__slide-wrap reviews__slide-wrap">
+                      <img class="swiper__img" src="img/services/services1.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-scrollbar swiper__scrollbar"></div>
+                </div>
+                <div class="swiper__button swiper__button-next"></div>
+                <div class="swiper__button swiper__button-prev"></div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
@@ -439,8 +479,10 @@
 
     <div class="overlay"></div>
 
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
     <script src="js/libs/swiper.min.js"></script>
-    <script src="js/libs/inputmask.min.js"></script>
+    <!-- <script src="js/libs/inputmask.min.js"></script> -->
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
     <script src="js/libs/lightgallery/lightgallery.min.js"></script>
     <script src="js/libs/lightgallery/lg-zoom.min.js"></script>
 

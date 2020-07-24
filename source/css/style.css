@@ -1710,6 +1710,9 @@ input[type="radio"].visually-hidden {
     width: 40%;
   }
 }
+.swiper {
+  position: relative;
+}
 .swiper__slide-wrap {
   height: 26rem;
 }
@@ -1733,11 +1736,11 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 .swiper__button-next {
-  right: -2.5rem;
+  right: -4.5rem;
   background-image: url('../img/svg/btn-next-white.svg');
 }
 .swiper__button-prev {
-  left: -2.5rem;
+  left: -4.5rem;
   background-image: url('../img/svg/btn-prev-white.svg');
 }
 .swiper__scrollbar {
@@ -1774,10 +1777,10 @@ input[type="radio"].visually-hidden {
     background-size: 1.3rem;
   }
   .swiper__button-next {
-    right: 2.5rem;
+    right: 0;
   }
   .swiper__button-prev {
-    left: 2.5rem;
+    left: 0;
   }
 }
 .advantages {
@@ -2307,8 +2310,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 13.5rem;
 }
 .reviews__item {
-  margin-left: 4rem;
-  margin-right: 16.5rem;
   margin-bottom: 7.8rem;
 }
 .reviews__item:last-child {
@@ -2317,11 +2318,8 @@ input[type="radio"].visually-hidden {
 .reviews__blockquote {
   box-sizing: border-box;
   position: relative;
+  width: 99rem;
   margin: 0;
-  padding-top: 4.8rem;
-}
-.reviews__blockquote:last-child {
-  margin-bottom: 0;
 }
 .reviews__datetime-wrap {
   position: absolute;
@@ -2342,6 +2340,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   margin-left: 7.6rem;
   margin-bottom: 1.9rem;
+  padding-top: 4.8rem;
   font-size: 3rem;
   font-style: normal;
   line-height: 3.5rem;
@@ -2349,6 +2348,12 @@ input[type="radio"].visually-hidden {
 .reviews__text {
   font-size: 1.7rem;
   line-height: 2.7rem;
+}
+.reviews__swiper {
+  margin-top: 16px;
+}
+.reviews__slide-wrap {
+  height: 37rem;
 }
 @media (max-width: 48em) {
   .reviews {
@@ -2360,12 +2365,11 @@ input[type="radio"].visually-hidden {
     margin-right: 0;
     margin-bottom: 6.5rem;
   }
+  .reviews__blockquote {
+    width: auto;
+  }
   .reviews__author-name {
     margin-left: 8.9rem;
-  }
-  .reviews__text {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 .main-service {
