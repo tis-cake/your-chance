@@ -1710,6 +1710,9 @@ input[type="radio"].visually-hidden {
     width: 40%;
   }
 }
+.nav-hide .swiper__button {
+  display: none;
+}
 .swiper {
   position: relative;
 }
@@ -2355,6 +2358,10 @@ input[type="radio"].visually-hidden {
 .reviews__slide-wrap {
   height: 37rem;
 }
+.reviews__video-wrap {
+  width: 54.3rem;
+  height: 25.6rem;
+}
 @media (max-width: 48em) {
   .reviews {
     padding-top: 4.5rem;
@@ -2370,6 +2377,12 @@ input[type="radio"].visually-hidden {
   }
   .reviews__author-name {
     margin-left: 8.9rem;
+  }
+  .reviews__slide-wrap {
+    height: 19.6rem;
+  }
+  .reviews__video-wrap {
+    width: 100%;
   }
 }
 .main-service {
