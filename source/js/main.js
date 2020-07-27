@@ -36,7 +36,7 @@ if (width <= 756) {
 lightGallery(document.querySelector('#lightgallery'));
 
 // маска на телефон
-Inputmask({"mask": "+7 ( 999 ) 999 99 - 99"}).mask(inputsTel);
+// Inputmask({"mask": "+7 ( 999 ) 999 99 - 99"}).mask(inputsTel);
 
 // вкладка "подробнее" у списка
 let moreBtnArr = document.querySelectorAll('.list__more-info');
@@ -258,3 +258,15 @@ $(document).ready(function() {
     }
   }
 });
+
+// маска для поля ввода номера
+// maskedinput
+$(document).ready(function () {
+  $(".phone-mask").mask("+7 (  999  ) 999  99  99");
+});
+
+// галерея отзывов
+let reviewGalleryArr = document.querySelectorAll('.lightgallery-review');
+for (let i = 0; i < reviewGalleryArr.length; i++) {
+  lightGallery(reviewGalleryArr[i]);
+}
