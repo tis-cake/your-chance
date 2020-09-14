@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="«Твой шанс»">
+    <title>Твой шанс</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">
+
+    <link rel="preload" href="fonts/Circe/regular/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/lightgallery.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+
+          <button class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+
+          <a class="header__logo logo" href="index.html">
+            <img class="logo__img-wrap" src="img/logo/logo.png" alt="Логотип портала «Твой шанс»">
+            <p class="logo__title">Твой шанс</p>
+          </a>
+
+          <a class="header__link-call-back modal-callback" href="#">
+            <img class="header__link-call-back-img" src="img/svg/call-w.svg" alt="Обратный звонок">
+          </a>
+
+          <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Реабилитация в центре</a>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link main-nav-sub">Лечение наркомании</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Детоксикация в клинике</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Лечение подростков</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение солевой наркомании</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Героиновая наркомания</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">ВИП лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Снятие ломки</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение спайсовой наркомании</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">УБОД</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Амбулаторное лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Работа с психологом</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link main-nav-sub">Лечение алкоголизма</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Детоксикация в клинике</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение подростков</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">ВИП лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Вызов нарколога</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Женский алкоголизм</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Пивной алкоголизм</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Вывод из запоя</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Амбулаторное лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Работа с психологом</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Кодирование</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link main-nav-sub">Игромания</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detail.html">Лечение подростков</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">ВИП лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Амбулаторное лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Работа с психологом</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Онлайн игры</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Казино</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение игровой наркомании</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Ставки на спорт</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav-sub" href="about.html">О центре</a>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="reviews.html">Отзывы</a>
+                  </li>
+                  <li class="main-nav__subitem mobile-block">
+                    <a class="main-nav__sublink" href="about.html">О центре</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="masters.html">Специалисты</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__phone-wrapper">
+            <a class="header__phone-link" href="tel:+79678000022">+7(967) 800 00 22</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <article class="banner-green banner-green--white">
+        <div class="banner-green__content-wrap">
+          <p class="banner-green__title">Лечение зависимостей</p>
+
+          <p class="banner-green__desc banner-green__desc--mw">На бесплатной консультации мы расскажем, как вы можете замотивировать зависимого на лечение.</p>
+
+          <p class="banner-green__main-title banner-green__main-title--fz200m">Наши услуги</span></p>
+
+          <a href="#" class="banner-green__link link modal-callback">Бесплатная консультация</a>
+
+        </div>
+      </article>
+
+      <section class="services-all">
+        <div class="container">
+          <ul class="services-all__list">
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/1.jpg" alt="Анонимная наркологическая помощь">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Анонимная наркологическая помощь
+                  </span>
+                  <span class="services-all__desc">
+                    Бесплатная консультация с наркологом
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/2.jpg" alt="Вызвать нарколога на дом">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Вызвать нарколога на дом
+                  </span>
+                  <span class="services-all__desc">
+                    Наш специалист приедет к вам домой и проведет необходимое лечение
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/3.jpg" alt="Детоксикация от наркотиков">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Детоксикация от наркотиков
+                  </span>
+                  <span class="services-all__desc">
+                    Очищение организма от наркотических веществ
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/4.jpg" alt="Консультация нарколога">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Консультация нарколога
+                  </span>
+                  <span class="services-all__desc">
+                    Нарколог проконсультирует по всем интересующим вас вопросам
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/5.jpg" alt="Лечение наркомании">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Лечение наркомании
+                  </span>
+                  <span class="services-all__desc">
+                    Комплексная программа лечения зависимости
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/6.jpg" alt="Лечение подрастковых зависимостей">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Лечение подрастковых зависимостей
+                  </span>
+                  <span class="services-all__desc">
+                    Главное в лечении - это реабилитация в центре
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/7.jpg" alt="Реабилитация наркозависимых">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Реабилитация наркозависимых
+                  </span>
+                  <span class="services-all__desc">
+                    Очищение организма от наркотических веществ
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/8.jpg" alt="Снятие ломки">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Снятие ломки
+                  </span>
+                  <span class="services-all__desc">
+                    Нарколог проконсультирует по всем интересующим вас вопросам
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/9.jpg" alt="УБОД">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    УБОД
+                  </span>
+                  <span class="services-all__desc">
+                    Ультрабыстрая опиодная детоксикация
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/10.jpg" alt="Вывод из запоя">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Вывод из запоя
+                  </span>
+                  <span class="services-all__desc">
+                    Наши специалисты помогут справиться с запоем
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/11.jpg" alt="Вывод из запоя принудительно">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Вывод из запоя принудительно
+                  </span>
+                  <span class="services-all__desc">
+                    Вывод из запоя без согласия зависимого
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/12.jpg" alt="Женский алкоголизм">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Женский алкоголизм
+                  </span>
+                  <span class="services-all__desc">
+                    Лечение женского алкоголизма по современным методикам
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/13.jpg" alt="Капельница от запоя в Москве">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Капельница от запоя в Москве
+                  </span>
+                  <span class="services-all__desc">
+                    Очищение оргазима от алкоголя
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/14.jpg" alt="Клиники вывода из запоя">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Клиники вывода из запоя
+                  </span>
+                  <span class="services-all__desc">
+                    Вывода из запоя в клинике с помощью капепельниц
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/15.jpg" alt="Кодирование от алкоголизма">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Кодирование от алкоголизма
+                  </span>
+                  <span class="services-all__desc">
+                    Временное решение проблемы. Необходимо комплексное лечение
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/16.jpg" alt="Кодирование от алкоголизма на дому">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Кодирование от алкоголизма на дому
+                  </span>
+                  <span class="services-all__desc">
+                    Временное решение проблемы. Необходимо полное лечение
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/17.jpg" alt="Лечение алкоголизма">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Лечение алкоголизма
+                  </span>
+                  <span class="services-all__desc">
+                    Основной этап лечения - это реабилитация в центре
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/18.jpg" alt="Лечение алкоголизма в реабилитационных центрах">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Лечение алкоголизма в реабилитационных центрах
+                  </span>
+                  <span class="services-all__desc">
+                    Самый эффективный способ борьбы с зависимостью
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/19.jpg" alt="Лечение зависимости от пива">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Лечение зависимости от пива
+                  </span>
+                  <span class="services-all__desc">
+                    Основной этап лечения - это реабилитация в центре
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/20.jpg" alt="Подростковый алкоголизм">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Подростковый алкоголизм
+                  </span>
+                  <span class="services-all__desc">
+                    Безопасная и индивидуальная программа
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/21.jpg" alt="Принудительное лечение алкоголизма">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Принудительное лечение алкоголизма
+                  </span>
+                  <span class="services-all__desc">
+                    Детоксикация в клинике, после прохождения реабилитации
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/22.jpg" alt="Стационарное лечение алкоголизма">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Стационарное лечение алкоголизма
+                  </span>
+                  <span class="services-all__desc">
+                    Физическое восстановление организма
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/23.jpg" alt="Лечение зависимости от интернета">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Лечение зависимости от интернета
+                  </span>
+                  <span class="services-all__desc">
+                    Основной этап лечения - это реабилитация в центре
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+            <li class="services-all__item">
+              <a class="services-all__link" href="service-detail.html">
+                <p class="services-all__img-wrap">
+                  <img class="services-all__img" src="img/services-all/24.jpg" alt="Лечение игромании">
+                </p>
+                <p class="services-all__text-wrap">
+                  <span class="services-all__price">
+                    от 3000 руб/сутки
+                  </span>
+                  <span class="services-all__title">
+                    Лечение игромании
+                  </span>
+                  <span class="services-all__desc">
+                    Основной этап лечения - это реабилитация в центре
+                  </span>
+                  <span class="link services-all__go-link">подробнее</span>
+                </p>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__columns-wrap">
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">ИНФОРМАЦИЯ</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">О центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Специалисты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">Лечение наркомании</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Детоксикация в клинике</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение подростков</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение солевой наркомании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Героиновая наркомания</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">ВИП лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Снятие ломки</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение спайсовой наркомании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Программы лечения</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">УБОД</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Амбулаторное лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Работа с психологом</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">Лечение алкоголизма</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Детоксикация в клинике</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение подростков</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">ВИП лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вызов нарколога</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Женский алкоголизм</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Пивной алкоголизм</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Программы лечения</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вывод из запоя</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Амбулаторное лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Работа с психологом</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Кодирование</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__list-tile">Лечение игромании</li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реабилитация в центре</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение подростков</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">ВИП лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Программы лечения</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Амбулаторное лечение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Работа с психологом</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Онлайн игры</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Казино</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лечение игровой наркомании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Ставки на спорт</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom-link-wrap">
+          <a class="footer__logo logo" href="index.html">
+            <img class="logo__img-wrap" src="img/logo/logo.png" alt="Логотип портала «Твой шанс»">
+            <p class="logo__title">Твой шанс</p>
+          </a>
+          <div class="footer__phone-wrapper">
+            <p class="footer__phone-locate">Москвоская область, г. Одинцово</p>
+            <a class="footer__phone-link" href="tel:+79678000022">+7(967) 800 00 22</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal modal--callback">
+      <div class="modal-wrapper">
+        <p class="modal__title">Введите ваш номер телефона</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 ( ___ ) ___ __ - __" required>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="modal modal--excursion">
+      <div class="modal-wrapper">
+        <p class="modal__title">Заявка на экскурсию в центр</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 ( ___ ) ___ __ - __" required>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="modal modal--review">
+      <div class="modal-wrapper">
+        <p class="modal__title">Оставить отзыв</p>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__name" type="text" name="name" placeholder="Ваше имя" required>
+          <textarea class="modal__textarea" name="" id="" placeholder="Ваш отзыв" required></textarea>
+          <button class="modal__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="overlay"></div>
+
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <!-- <script src="js/libs/inputmask.min.js"></script> -->
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
+    <script src="js/libs/lightgallery/lightgallery.min.js"></script>
+    <script src="js/libs/lightgallery/lg-zoom.min.js"></script>
+
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/polyfills/objectFitPolyfill.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>
