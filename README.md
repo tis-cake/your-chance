@@ -1,2 +1,2 @@
 # your-chance
-https://твойшанс.москва/
+https://tvoyshans-clinic.ru/
